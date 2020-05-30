@@ -10,7 +10,7 @@ hr{
     width: 80%;
 }
 
-img.img_before{
+img.img_before,img.img_after{
     width: 20%;
     margin: 5% 5% 0 5%;
 }
