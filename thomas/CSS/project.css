@@ -96,3 +96,26 @@ h3{
     border-left: solid 2px blue;
     padding-left: 3%;
 }
+
+
+
+@media (min-width: 768px) {
+
+.col-md-1-spe{
+    flex: 0 0 12.499995%;
+    max-width: 12.499995%;
+}
+
+
+}
+
+@media (max-width: 768px) {
+
+.section_job{
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+
+}
