@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="../CSS/css.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <form class="login" method="POST">
+             <span id="erreurLogin" class=""></span>
+            <div>
+               
+                <label  for="username">Username</label>
+                <input type="text"  id="username" required>
+                
+            </div>
+            <div>
+                <label  for="password">Password</label>
+                <input type="password" id="password" required>
+            </div>
+            <div>
+                <button type="button" onClick="login()">Sign in</button>
+            </div>
+        </form>
+
+        <form class="register" method="POST">
+            <div>
+                <label  for="NewUserName">Username</label>
+                <input type="text"  id="NewUserName" required>
+                <span id="erreurNom" class=""></span>
+            </div>
+            <div>
+                <label  for="NewUserPassword">Password</label>
+                <input type="password" id="NewUserPassword" required>
+                <span id="erreurPassword" class=""></span>
+                
+            </div>
+            <div>
+                <button type="button" onClick="register()">Sign in</button>
+            </div>
+            <div>
+                <button type="button" onClick="deleteStorage()">delete</button>
+            </div>
+
+        </form>
+        <script src="../JS/login.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    </body>
+</html>
+

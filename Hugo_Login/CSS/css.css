@@ -1,0 +1,8 @@
+ #erreurNom,#erreurPassword,#erreurLogin{
+    display:none;
+    color: #D8000C;
+}
+
+#erreurNom.visible,#erreurPassword.visible,#erreurLogin.visible{
+    display: inline;
+}
