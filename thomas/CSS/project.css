@@ -64,6 +64,10 @@ section{
 
 }
 
+.legend{
+    margin-top: 10em;
+}
+
 .col-md-1{
     display: inline;
 }
@@ -96,6 +100,8 @@ h3{
     border-left: solid 2px blue;
     padding-left: 3%;
 }
+
+
 
 
 
