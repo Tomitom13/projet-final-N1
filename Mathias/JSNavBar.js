@@ -9,6 +9,12 @@ scrolledPast = false;
 if(sessionStorage.getItem("Nmode")===null){
     sessionStorage.setItem("Nmode",1);
 }
+if(sessionStorage.getItem("Nmode")==2){
+    $('body').toggleClass('night');
+    $('.main-content').toggleClass('night');
+    $('section').toggleClass('night');
+    $('.navbar').toggleClass('night');
+}
 
 // transition Into
 function switchInto() {
@@ -62,10 +68,17 @@ setInterval(() => {
 function NightM(){
     
     if(sessionStorage.getItem("Nmode")==1){
-        alert("Bonjour");
         $('body').toggleClass('night');
         $('.main-content').toggleClass('night');
         $('section').toggleClass('night');
         $('.navbar').toggleClass('night');
+        sessionStorage.setItem("Nmode",2);
+    }
+    else if(sessionStorage.getItem("Nmode")==2){
+        $('body').toggleClass('night');
+        $('.main-content').toggleClass('night');
+        $('section').toggleClass('night');
+        $('.navbar').toggleClass('night');
+        sessionStorage.setItem("Nmode",1);
     }
 }
