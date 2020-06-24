@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="csscontact.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+        <a href="report.html">_I_I_I_I_</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card bg-dark mb-3" style="width:100% ; margin-top: 5vh">
+                        <div class="card-header"><h4 >NOUS CONTACTER</h4></div>
+                        <div class="card-body">
+
+                            
+                            <p>Besoin d'un renseignement :</p>
+                                
+                                    <form id="form" method="POST" name="envoi" action="mailto:matthis.bernet@isen.yncrea.fr?Subjet=Formulaire">
+                                        <div >
+                                            <label id="contact1" class="obligatoire" for="nom">Nom :</label>               
+                                            <input class="form" type='text' onInput="Verifnom()" id='nom' name='nom' autocomplete="off"> <!--permet de faire rentrer une information à l'utilisateur ici un nom-->
+
+
+
+                                            <label id="contact2" class="obligatoire" for="prenom">Prenom : </label>
+                                            <input  class="form" type='text' onInput="Verifprenom()" id='prenom' name='prenom' autocomplete="off">
+                                            <!-- ici un prenom -->
+                                        </div>
+                                        <div >
+                                            <label id="contact3" class="obligatoire" for="email">Email :</label>
+                                            <input  class="form" type='email' onInput="Verifemail()" id='email' name='emailaddress' autocomplete="off" >
+                                            <!--permet de faire rentrer une information à l'utilisateur ici une email et seulement une email-->
+
+
+                                            <label id="contact4"  for="tel">Tel :</label>
+                                            <input type="tel" id="tel" name="tel" pattern="[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}.[0-9]{2}" required>      
+                                        </div><br>
+
+                                        <label  id="contact5" for="langue" >Reponse en quelle Langue :</label><!--permet de choisir grace à un choix multiple une unique information ici la langue de la reponce-->
+                                        <input type="radio" name="langue" value="fr">français
+                                        <input type="radio" name="langue" value="en">anglais
+                                        <input type="radio" name="langue" value="es">espagnol
+                                        <input type="radio" name="langue" value="it">italien<br><br>
+
+
+
+                                        <label id="contact6" class="obligatoire" for="msg">Message :</label></br>
+
+                                        <textarea id="msg" name="message" onInput="Verifmessage()" cols="145" rows="5"></textarea><!--crée une zone de texte pour envoyer un message-->
+                                        </br></br>
+
+                                        <div>
+                                            <button id="envoi" class="form" type="button" onClick="Verifmessage(), Verifemail(), Verifprenom(), Verifnom(), Valid(m, e, p, n)">Envoyer</button>
+                                            <button id="contact7" type="button" class="form" onclick="resetForm()">Réinitialiser</button>
+                                        </div>
+                                    </form>
+
+                                
+
+                        </div>
+                    
+            </div>
+        </div>
+
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="jscontact.js" type="text/javascript"></script>
+    </body>
+</html>
