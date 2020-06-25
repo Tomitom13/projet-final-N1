@@ -1,0 +1,48 @@
+#contact1{
+    margin-left: 10%;
+    width: 5vw;
+}
+
+#nom{
+    margin-left: 0%;
+}
+
+#contact2{
+    margin-left: 15%;
+    width: 5vw;
+}
+
+#contact3{
+    margin-left: 10%;
+    width: 5vw;
+}
+
+#contact4{
+    margin-left: 15%;
+    width: 5vw;
+}
+
+#contact5{
+    margin-left: 17%;
+}
+
+#message{
+    width: 100%;
+}
+
+#contact7{
+    margin-left: 83%;
+}
+
+
+label.obligatoire:after{
+    content: "*";
+    color: red;
+}
+
+body{
+    background-color: black;
+}
+#msg{
+    width: 100%;
+}

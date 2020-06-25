@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="bootstrap-4.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="fontawesome-free-5.11.2-web/css/all.css" rel="stylesheet" type="text/css"/>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="cssreport.css" rel="stylesheet" type="text/css"/>
+
+
+    <body>
+        <a href="index.html">_I_I_I_I_</a>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card bg-dark mb-3" style="width:100% ; margin-top: 5vh">
+                        <div class="card-header"><h4 >Un problemes rencontré ?</h4></div>
+                        <div class="card-body">
+
+
+
+
+                            <form id="form" method="POST" name="envoi" action="mailto:matthis.bernet@isen.yncrea.fr?Subjet=Formulaire">
+
+
+
+                                <label  id="report1" class="obligatoire" for="probleme" >Quel est le probleme :</label><br><!--permet de choisir grace à un choix multiple une unique information ici la langue de la reponce-->
+                                <input id="choix" type="radio" name="probleme" value="aff">mon probleme est sur l'affichage d'une page<br>
+                                <input id="choix" type="radio" name="probleme" value="com">mon probleme est dans un commentaire inaproprié<br>
+                                <input id="choix" type="radio" name="probleme" value="cop">mon probleme est un copy right d'une photo<br>
+                                <input id="choix" type="radio" name="probleme" value="env">mon probleme est sur un commentaire qui ne s'envoi pas<br>
+                                <input id="choix" type="radio" name="probleme" value="con">mon probleme est une impossibilité de me connecter<br>
+                                <input id="choix" type="radio" name="probleme" value="aut">mon probleme est autre<br><br>
+
+
+
+                                <label id="report2" for="msg">plus d'information :</label></br>
+
+                                <textarea id="msg" name="message" onInput="Verifmessage()" rows="5"></textarea><!--crée une zone de texte pour envoyer un message-->
+                                </br></br>
+
+                                <div >
+                                    <label id="report3" class="obligatoire" for="email">Email :</label>
+                                    <input  class="form" type='email' onInput="Verifemail()" id='email' name='emailaddress' autocomplete="off" >
+
+                                </div><br>
+
+                                <div>
+                                    <button id="envoi" class="form" type="button" onClick="Verifemail(), VerifRadio(), Valid(e, r)">Envoyer</button>
+                                    <button id="report4" type="button" class="form" onclick="resetForm()">Réinitialiser</button>
+                                </div>
+                            </form>
+
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="jsreport.js" type="text/javascript"></script>
+    </body>
+</html>
