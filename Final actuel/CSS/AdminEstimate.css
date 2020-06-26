@@ -1,0 +1,320 @@
+h2{
+    text-align: center;
+}
+.w-100{
+    height:20em;
+}
+
+hr{
+    border-top: black solid 0.2em;
+    width: 80%;
+}
+
+img.img_before,img.img_after{
+    width: 20%;
+    margin: 5% 5% 0 5%;
+}
+
+section{
+    text-align: center;
+}
+
+.workDiv{
+   
+   display: inline;
+  /* width: 10em;*/
+   height: 12em;
+   text-align: center;
+}
+.workSpace{
+    display: inline;
+
+}
+#Section_Work{
+    width: 100%;
+    
+}
+.work, .workText{
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    z-index: 5;
+    margin: 0;
+}
+/*
+:root{
+    --x1_before: 0;
+    --y1_before: 0;
+    --x2_before: 0;
+    --y2_before: 100%;
+    --x3_before: 50%;
+    --y3_before: 50%;
+    --x4_before: 100%;
+    --x4_before: 0;
+}*/
+.before{
+    clip-path: polygon(0 0, 0 98%, 0 98%,98% 0, 98% 0);
+    margin-left: -5em;
+    
+}
+
+.after{
+    clip-path: polygon(100% 100%, 2% 100%, 2% 100%, 100% 2%, 100% 0);
+        margin-left: -5em;
+
+}
+
+.legend{
+    margin-top: 10em;
+}
+
+.col-md-1{
+    display: inline;
+}
+@media (min-width: 768px) {
+
+.col-md-1-spe{
+    flex: 0 0 12.499995%;
+    max-width: 12.499995%;
+}
+
+
+}
+
+.work:hover{
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    clip-path: unset;
+    z-index: 7;
+   
+}
+
+h3{
+    margin-left: 3%;
+    display: inline-block;
+    border-bottom: solid 3px blue ;
+}
+
+
+.team{
+    display: inline;
+}
+
+.section_job{
+    text-align: left;
+    width: 49%;
+    display: inline-block;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+.section_job{
+    width: 100%;
+    text-align: center;
+    border: none;
+}
+
+
+}
+
+.job_right{
+    border-left: solid 2px blue;
+    padding-left: 3%;
+}
+
+
+.nb_color{
+    display: inline;
+}
+
+.color_choice{
+   border: none;
+    display: inline-block;
+    margin-left: 0.5em;
+    background-color: white;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.on_hr{
+    margin-top: -2rem;
+   /* width: 10%;*/
+   /* background-color: white;*/
+    text-align: center;
+   /* margin-left: 45%;*/
+}
+
+.on_hr span{
+    background-color: white;
+    padding: 0 10px 0 10px;
+}
+
+
+.section_left{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+    width: 49%;
+}
+
+.section_right{
+    position: relative;
+    margin-top: 0;
+    margin-left: 50%;
+    width: 49%;
+}
+
+
+
+
+.select_furniture{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.img_furniture{
+    width: 100%;
+    position: relative;
+    margin-top: 0;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.furniture_dimension{
+    display: inline;
+    color: gray;
+    font-size: 80%;
+}
+
+.length, .width, .height{
+    display: inline;
+}
+
+.furniture_name{
+    display: inline;
+    font-weight: bold;
+}
+.furniture_right{
+    cursor: pointer;
+    display: inline-block;
+    text-align: justify;
+}
+
+input.checkbox{
+    position: absolute;
+    margin-top:9%;
+    margin-left: -1em;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+
+.select_furniture{
+    width: 100%;
+   /* text-align: center;*/
+    border: none;
+}
+
+
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+}
+
+input[type="checkbox"][id^="ground_cb_"] {
+  display: none;
+}
+.ground{
+  text-align: center;
+    display: inline-block;
+}
+label.square_view {
+  border: 1px solid #fff;
+  padding: 10px;
+  display: block;
+  position: relative;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+label.square_view::before {
+  background-color: white;
+  color: white;
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  border: 1px solid grey;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  line-height: 28px;
+  transition-duration: 0.4s;
+  transform: scale(0);
+}
+
+label.square_view img {
+  width: 10em;
+  height: 10em;
+  transition-duration: 0.2s;
+  transform-origin: 50% 50%;
+}
+
+:checked+label.square_view {
+  border-color: #ddd;
+}
+
+:checked+label.square_view::before {
+  content: "✓";
+  background-color: rgb(70, 118, 250);
+  transform: scale(1);
+}
+
+:checked+label.square_view img {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #333;
+  z-index: -1;
+}
+
+:checked+label.square_view div {
+  font-weight: bold;
+}
+
+input.dimension{
+width: 10%;
+display: inline;
+}
+
+div.unit{
+    display: inline;
+}
+
+.label_dimension{
+    margin: 0 0 0 5%;
+}
+
+.Change_input{
+    
+    width: 10%;
+}
+

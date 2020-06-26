@@ -1,0 +1,161 @@
+h2{
+    text-align: center;
+}
+.w-100{
+    height:20em;
+}
+
+hr{
+    border-top: black solid 0.2em;
+    width: 80%;
+}
+
+img.img_before,img.img_after{
+    width: 20%;
+    margin: 5% 5% 0 5%;
+}
+
+section{
+    text-align: center;
+}
+
+.workDiv{
+   
+   display: inline;
+  /* width: 10em;*/
+   height: 12em;
+   text-align: center;
+}
+.workSpace{
+    display: inline;
+
+}
+#Section_Work{
+    width: 100%;
+    
+}
+.work, .workText{
+    position: absolute;
+    width: 10em;
+    height: 10em;
+    z-index: 5;
+    margin: 0;
+}
+/*
+:root{
+    --x1_before: 0;
+    --y1_before: 0;
+    --x2_before: 0;
+    --y2_before: 100%;
+    --x3_before: 50%;
+    --y3_before: 50%;
+    --x4_before: 100%;
+    --x4_before: 0;
+}*/
+.before{
+    clip-path: polygon(0 0, 0 98%, 0 98%,98% 0, 98% 0);
+    margin-left: -5em;
+    
+}
+
+.after{
+    clip-path: polygon(100% 100%, 2% 100%, 2% 100%, 100% 2%, 100% 0);
+        margin-left: -5em;
+
+}
+
+.legend{
+    margin-top: 10em;
+}
+
+.col-md-1{
+    display: inline;
+}
+.work:hover{
+    opacity: 1;
+    transition: opacity .25s ease-in-out;
+    clip-path: unset;
+    z-index: 7;
+   
+}
+
+h3{
+    margin-left: 3%;
+    display: inline-block;
+    border-bottom: solid 3px blue ;
+}
+
+
+.team{
+    display: inline;
+}
+
+.section_job{
+    text-align: left;
+    width: 49%;
+    display: inline-block;
+}
+
+.job_right{
+    border-left: solid 2px blue;
+    padding-left: 3%;
+}
+
+
+@media (min-width: 768px) {
+
+.col-md-1-spe{
+    flex: 0 0 12.499995%;
+    max-width: 12.499995%;
+}
+
+
+}
+
+@media (max-width: 768px) {
+
+.section_job{
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding-left: 0px;
+}
+}
+
+.Change_input{
+    border-radius: 3px;
+    display: inline;
+    margin-left: 1em;
+    width: 60%;
+    border: solid 2px black;
+}
+
+.Change_input_job{
+    border-radius: 3px;
+    display: inline;
+    width: 60%;
+    border: solid 2px black;
+    margin-left: 2.78em;
+}
+
+.Change_input_legend{
+    border-radius: 3px;
+    display: inline;
+    width: 100%;
+    border: solid 2px black;
+    margin-top: 10em;
+}
+
+#Change_Project{
+   margin: 1% 0 0 25%;
+}
+
+.Change_textarea{
+    border: solid 2px black;
+    border-radius: 3px;
+    margin-left: 10%;
+    width: 80%;
+}
+label{
+    font-weight: bold;
+}
