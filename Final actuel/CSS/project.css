@@ -385,3 +385,26 @@ input{
   opacity: 1;
   right: 0;
 }
+
+
+ #avis {
+     text-align: center;
+ }
+ #Nom {
+     font-weight: bold;
+ }
+
+ .rating {
+   direction: rtl;
+   text-align: center;
+ 
+}
+
+.rating span {
+   color: #aaa;
+   text-decoration: none;
+   font-size: 3em;
+   transition: color .4s;
+      cursor: default;
+
+}
