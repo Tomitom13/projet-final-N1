@@ -1,0 +1,73 @@
+#contact1{
+    margin-left: 0;
+    width: 100%;
+}
+
+#nom{
+    margin-left: 0%;
+}
+
+#contact2{
+    margin-left: 0;
+    width: 100%;
+}
+
+#contact3{
+    margin-left:0;
+    width: 100%;
+}
+
+#contact4{
+    margin-left: 0;
+    width: 100%;
+}
+
+#contact5{
+    margin-left: 17%;
+}
+
+#contact6{
+    width: 100%;
+    margin-left:10%;
+}
+
+#contact7{
+    margin-left: 83%;
+    float:right;
+}
+
+
+label.obligatoire:after{
+    content: "*";
+    color: red;
+}
+
+body{
+    background-color: lightgrey;
+}
+
+body.night{
+    background : #2b3a4f ;
+}
+#msg{
+    width: 80%;
+    margin-left:10%;
+}
+.card-header.night{
+    background: #024361;
+    color:white;
+}
+.c1.night{
+    background: #024361 ;
+    color:white;
+}
+
+.card-header{
+    background: #999999;
+    color:black;
+}
+.c1{
+    background: #999999;
+    color:black;
+}
+

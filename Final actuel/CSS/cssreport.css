@@ -1,0 +1,33 @@
+
+#report1{
+    display: block;
+    text-align: center;
+}
+#choix{
+    margin-left: 23vw;
+}
+
+
+#report3{
+    margin-left: 20%;
+}
+
+#email{
+    width: 30vw;
+}
+
+#report4{
+    margin-left: 83%;
+}
+
+label.obligatoire:after{
+    content: "*";
+    color: red;
+}
+
+body{
+    background-color: black;
+}
+#msg{
+    width: 100%;
+}
