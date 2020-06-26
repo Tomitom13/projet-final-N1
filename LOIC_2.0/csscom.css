@@ -19,7 +19,7 @@
 /******************************************************************/
 
 body{
-    margin-top: 4vh
+    margin-top: 4vh;
 }
 
 hr {
@@ -63,4 +63,16 @@ label.obligatoire:after{
 
 #com5{
     margin-left: 84%;
+}
+
+fieldset {
+  display: block;
+  margin-left: 2px;
+  margin-right: 2px;
+  padding-top:1%;
+  padding-bottom: 0.625em;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+  border: groove 2px;
+  border-radius: 5px;
 }
