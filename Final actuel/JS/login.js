@@ -1,3 +1,4 @@
+    localStorage.setItem("admin", "hugohugohugo");
 
 
 function login() {
@@ -8,13 +9,13 @@ function login() {
     if (localStorage.getItem(username) === password) {
         if (username === "admin") {
 
-            window.location.href = "../../Admin/HTML/HTMLAdminProject.html";
+            window.location.href = "../HTML/HTMLAdminProject.html";
 
             localStorage.setItem("NamePerson", username);
 
         } else {
 
-            window.location.href = "../../HTML/Accueil.html";
+            window.location.href = "../HTML/Accueil.html";
 
             localStorage.setItem("NamePerson", username);
  

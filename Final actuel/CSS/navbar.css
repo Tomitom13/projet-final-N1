@@ -43,7 +43,7 @@ h3 {
   border: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  opacity : 20%;
+  opacity : 100%;
   position : fixed;
   width: 100%
 /* --- navbar sizes --- */

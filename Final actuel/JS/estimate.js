@@ -2,7 +2,6 @@ document.querySelector('#Nb_Color').addEventListener("change", displaycolor, fal
 window.addEventListener("load", displaycolor, false);
 
 document.querySelector('#Valider').addEventListener("click", saveData, false);
-window.addEventListener("load", localStorage.clear(), false);
 
 window.addEventListener("load", displayMeuble, false);
 document.querySelector('#furniture').addEventListener("change", displayMeuble, false);

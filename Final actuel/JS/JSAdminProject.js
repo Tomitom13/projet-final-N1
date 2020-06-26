@@ -178,7 +178,7 @@ function supprimerDataNews() {
 }
 
 function retourIndex() {
-    window.location.href = '../../HTML/project.html';
+    window.location.href = '../HTML/project.html';
 }
 
 

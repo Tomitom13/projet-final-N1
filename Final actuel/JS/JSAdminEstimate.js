@@ -195,7 +195,7 @@ function supprimerDataNews() {
 }
 
 function retourIndex() {
-    window.location.href = '../../HTML/Estimate.html';
+    window.location.href = '../HTML/Estimate.html';
 }
 
 document.querySelector("#display").innerHTML = localStorage.getItem("NamePerson");
