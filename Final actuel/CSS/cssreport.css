@@ -1,76 +1,73 @@
-
-#report1{
-    display: block;
-    text-align: center;
+#report1 {
+  display: block;
+  text-align: center;
 }
-#choix{
-    margin-left: 30%;
-}
-
-
-#report3{
-    margin-left: 20%;
+#choix {
+  margin-left: 30%;
 }
 
-#email{
-    width: 40%;
-    margin-left:10%;
+#report3 {
+  margin-left: 20%;
 }
 
-#report4{
-    margin-left: 83%;
+#email {
+  width: 40%;
+  margin-left: 10%;
 }
 
-label.obligatoire:after{
-    content: "*";
-    color: red;
+#report4 {
+  margin-left: 83%;
 }
 
-#msg{
+label.obligatoire:after {
+  content: "*";
+  color: red;
+}
+
+#msg {
+  width: 100%;
+}
+body {
+  background-color: lightgrey;
+  background-image: url(../image/Login.jpg);
+}
+
+.overlay.night {
+  background-image: url(../image/LoginNight.jpg);
+}
+
+.card-header.night {
+  background: #2b3a4f;
+  color: white;
+  transition: 0.5s;
+}
+.c1.night {
+  background: #2b3a4f;
+  color: white;
+  transition: 0.5s;
+}
+
+.card-header {
+  background: #999999;
+  color: black;
+  transition: 0.5s;
+}
+.c1 {
+  background: #999999;
+  color: black;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  #choix {
+    margin-left: 0;
+  }
+
+  #report4 {
+    margin: 0;
+  }
+  #email {
     width: 100%;
-}
-body{
-    background-color: lightgrey;
-    background-image: url(../image/Login.jpg);
-}
-
-.overlay.night{
-    background-image: url(../image/LoginNight.jpg);
-}
-
-.card-header.night{
-    background: #2b3a4f;
-    color:white;
-    transition:0.5s;
-}
-.c1.night{
-    background: #2b3a4f;
-    color:white;
-    transition:0.5s;
-}
-
-.card-header{
-    background: #999999;
-    color:black;
-    transition:0.5s;
-}
-.c1{
-    background: #999999;
-    color:black;
-    transition:0.5s;
-}
-
-@media screen and (max-width:768px){
-
-  #choix{
-    margin-left:0;
-  }
-
-  #report4{
-    margin:0;
-  }
-  #email{
-    width:100%;
-    margin:0;
+    margin: 0;
   }
 }

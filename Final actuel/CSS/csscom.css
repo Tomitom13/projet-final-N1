@@ -1,75 +1,75 @@
 .rating {
-   direction: rtl;
-   text-align: center;
-   margin-bottom: 3%
+  direction: rtl;
+  text-align: center;
+  margin-bottom: 3%;
 }
 .rating a {
-   color: #aaa;
-   text-decoration: none;
-   font-size: 3em;
-   transition: color .4s;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 3em;
+  transition: color 0.4s;
 }
 .rating a:hover,
 .rating a:focus,
 .rating a:hover ~ a,
 .rating a:focus ~ a {
-   color: orange;
-   cursor: pointer;
+  color: orange;
+  cursor: pointer;
 }
 /******************************************************************/
 
-body{
-    margin-top: 4vh;
+body {
+  margin-top: 4vh;
 }
 
 hr {
-    border: none;
-    border-top: 3px double #333;
-    color: #333;
-    overflow: visible;
-    text-align: center;
-    height: 5px;
+  border: none;
+  border-top: 3px double #333;
+  color: #333;
+  overflow: visible;
+  text-align: center;
+  height: 5px;
 }
 
 hr:after {
-    background: #fff;
-    content: '§§§§§';
-    padding: 0 4px;
-    position: relative;
-    top: -13px;
+  background: #fff;
+  content: "§§§§§";
+  padding: 0 4px;
+  position: relative;
+  top: -13px;
 }
 
-#com1{
-   margin-left: 15%;  
+#com1 {
+  margin-left: 15%;
 }
 
-#com2{
-   margin-left: 25%;  
+#com2 {
+  margin-left: 25%;
 }
 
-#com3{
-    margin-left: 40%;
-    width: 20%;
+#com3 {
+  margin-left: 40%;
+  width: 20%;
 }
 
-#msg{
-    width: 100%;    
+#msg {
+  width: 100%;
 }
 
-label.obligatoire:after{
-    content: "*";
-    color: red;
+label.obligatoire:after {
+  content: "*";
+  color: red;
 }
 
-#com5{
-    margin-left: 84%;
+#com5 {
+  margin-left: 84%;
 }
 
 fieldset {
   display: block;
   margin-left: 2px;
   margin-right: 2px;
-  padding-top:1%;
+  padding-top: 1%;
   padding-bottom: 0.625em;
   padding-left: 0.75em;
   padding-right: 0.75em;
