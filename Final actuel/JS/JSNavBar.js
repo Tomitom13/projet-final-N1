@@ -26,7 +26,7 @@ if (sessionStorage.getItem("Nmode") == 2) {
     $('.job_right').toggleClass('night');
     $('.card-header').toggleClass('night');
     $('.c1').toggleClass('night');
-    $('.subtitle1').toggleClass('night');
+    $('.desc1').toggleClass('night');
 }
 
 // transition Into
@@ -98,7 +98,7 @@ function NightM() {
         $('.button').toggleClass('night');
         $('.card-header').toggleClass('night');
         $('.c1').toggleClass('night');
-        $('.subtitle1').toggleClass('night');
+        $('.desc1').toggleClass('night');
         sessionStorage.setItem("Nmode", 2);
     } else if (sessionStorage.getItem("Nmode") == 2) {
         $('body').toggleClass('night');
@@ -117,7 +117,7 @@ function NightM() {
         $('.button').toggleClass('night');
         $('.card-header').toggleClass('night');
         $('.c1').toggleClass('night');
-        $('.subtitle1').toggleClass('night');
+        $('.desc1').toggleClass('night');
         sessionStorage.setItem("Nmode", 1);
     }
 }
