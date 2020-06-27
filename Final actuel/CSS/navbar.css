@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dekko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 /* ////////////////////////////////////////////////////////////////////// NAVBAR ////////////////////////////////////////////////////////// */
 
@@ -183,5 +183,5 @@ hr.night{
     border-top:#2b3a4f solid 0.2em;
 }
 #title{
-    font-family: 'Dekko', cursive;
+    font-family: 'Playfair Display', serif;
 }
