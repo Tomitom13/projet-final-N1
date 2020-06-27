@@ -5,49 +5,61 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
 <html>
-    <head>
-        <title>Commentaire</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link href="../CSS/csscom.css" rel="stylesheet" type="text/css"/>
-    </head>
-    <body>
-        <nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl" data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md">
-            <div class="container-nav">
-                <div class="navbar-header">
-                    <button class="navbar-toggle collapsed buton" type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false">
-                        <!-- <span class="sr-only">Toggle navigation</span> -->
-                        <span class="icon-bar"><i class="fa fa-angle-double-down mr-1"></i></span>      
-                    </button> 
-                    <a class="navbar-brand" href="Accueil.html">Kebab master</a>
-                    <span onclick="NightM()"><img src="../image/nightmode.png" alt="" id="moon"></span>
-                </div>
-                <div class="collapse navbar-collapse" id="mobileNav">
-                    <div ><a class="navbar-links page" id="display" href="Login.html">login | register</a></div>
-                    <a class="navbar-links page" href="project.html"> Project</a> <br>
-                    <a class="navbar-links page" href="Estimate.html"> Devis</a> <br>
-                </div>
+
+<head>
+    <title>Commentaire</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../CSS/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/nmode.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/csscom.css" rel="stylesheet" type="text/css" />
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl" data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md" style="padding-top:15px;padding-bottom:15px;">
+        <div class="container-nav">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed buton" type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false">
+                    <!-- <span class="sr-only">Toggle navigation</span> -->
+                    <span class="icon-bar"><i class="fa fa-angle-double-down mr-1"></i></span>
+                </button>
+                <a class="navbar-brand" href="Accueil.html">Kebab master</a>
+                <span onclick="NightM()"><img src="../image/nightmode.png" alt="" id="moon"></span>
             </div>
-        </nav>
+            <div class="collapse navbar-collapse" id="mobileNav">
+                <div><a class="navbar-links page" id="display" href="Login.html">login | register</a></div>
+                <a class="navbar-links page" href="project.html"> Project</a> <br>
+                <a class="navbar-links page" href="Estimate.html"> Devis</a> <br>
+            </div>
+        </div>
+    </nav>
+    <div class="overlay">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-12">
 
-                    <form id="form" method="POST" name="envoi" action="mailto:matthis.bernet@isen.yncrea.fr?Subjet=Formulaire">
+                    <form id="form" method="POST" class="formulaire" name="envoi" action="mailto:matthis.bernet@isen.yncrea.fr?Subjet=Formulaire">
                         <fieldset>
-                            <div >
-                                <label id="com1" class="obligatoire" for="nom">Nom :</label>               
-                                <input class="form" type='text' onInput="Verifnom()" id='nom' name='nom' autocomplete="off"> <!--permet de faire rentrer une information à l'utilisateur ici un nom-->
+                            <div class="NP">
+                                <label id="com1" class="obligatoire" for="nom">Nom :</label>
+                                <input class="form" type='text' onInput="Verifnom()" id='nom' name='nom' autocomplete="off">
+                                <!--permet de faire rentrer une information à l'utilisateur ici un nom-->
 
 
 
                                 <label id="com2" class="obligatoire" for="prenom">Prenom : </label>
-                                <input  class="form" type='text' onInput="Verifprenom()" id='prenom' name='prenom' autocomplete="off">
+                                <input class="form" type='text' onInput="Verifprenom()" id='prenom' name='prenom' autocomplete="off">
                                 <!-- ici un prenom -->
-                            </div></br>
-                            <hr>
+                            </div>
+                            </br>
+                            <hr class="idk">
+                            <p class="on_hr">
+                                <span class="TitleHR">Number ONE</span>
+                            </p>
 
 
                             <select name="traveaux" id="com3">
@@ -61,9 +73,13 @@ and open the template in the editor.
 
                             <label id="com4" class="obligatoire" for="msg">Message :</label></br>
 
-                            <textarea id="msg" name="message" onInput="Verifmessage()" rows="5"></textarea><!--crée une zone de texte pour envoyer un message-->
+                            <textarea id="msg" name="message" onInput="Verifmessage()" rows="5"></textarea>
+                            <!--crée une zone de texte pour envoyer un message-->
                             </br></br>
-                            <hr>
+                            <hr class="idk">
+                            <p class="on_hr">
+                                <span class="TitleHR">Number TWO</span>
+                            </p>
                             <div class="rating">
                                 <a href="#5" onClick="valetoile(5)" title="Donner 5 étoiles">☆</a>
                                 <a href="#4" onClick="valetoile(4)" title="Donner 4 étoiles">☆</a>
@@ -79,47 +95,46 @@ and open the template in the editor.
                 </div>
             </div>
         </div>
-<div class="mt-5 pt-5 pb-5 footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-xs-12 about-company">
-                            <h2 class="footerTitle2">Heading</h2>
-                            <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
-                            <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
-                        </div>
-                        <div class="col-lg-3 col-xs-12 links">
-                            <h4 class="mt-lg-0 mt-sm-3">Links</h4>
-                            <ul class="m-0 p-0">
-                                <li>- <a href="Contact.html">Contact</a></li>
-                                <li>- <a href="report.html">Report a problem</a></li>
-                                <li>- <a href="commentaire.html">Commentaires</a></li>
-                                <li>- <a href="Login.html">Login</a></li>
-                                <li>- <a href="#">Sed faucibus</a></li>
-                                <li>- <a href="#">Mauris efficitur nulla</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-lg-4 col-xs-12 location">
-                            <h4 class="mt-lg-0 mt-sm-4">Location</h4>
-                            <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
-                            <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
-                            <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
-                        </div>
+        <div class="mt-5 pt-5 pb-5 footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-5 col-xs-12 about-company">
+                        <h2 class="footerTitle2">Heading</h2>
+                        <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac ante mollis quam tristique convallis </p>
+                        <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col copyright">
-                            <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
-                        </div>
+                    <div class="col-lg-3 col-xs-12 links">
+                        <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                        <ul class="m-0 p-0">
+                            <li>- <a href="Contact.html">Contact</a></li>
+                            <li>- <a href="report.html">Report a problem</a></li>
+                            <li>- <a href="commentaire.html">Commentaires</a></li>
+                            <li>- <a href="Login.html">Login</a></li>
+                            <li>- <a href="#">Sed faucibus</a></li>
+                            <li>- <a href="#">Mauris efficitur nulla</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 location">
+                        <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                        <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+                        <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+                        <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col copyright">
+                        <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
                     </div>
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script src="../JS/jscom.js" type="text/javascript"></script>
-    </body>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../JS/JSNavBarPetit.js" type="text/javascript"></script>
+</body>
+
 </html>
-
-

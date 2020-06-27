@@ -19,7 +19,8 @@
 /******************************************************************/
 
 body {
-  margin-top: 4vh;
+  background-color: lightgrey;
+  background-image: url(../image/Login.jpg);
 }
 
 hr {
@@ -31,12 +32,41 @@ hr {
   height: 5px;
 }
 
-hr:after {
+.on_hr{
+  margin-top: -2.3rem;
+ /* width: 10%;*/
+ /* background-color: white;*/
+  text-align: center;
+ /* margin-left: 45%;*/
+}
+
+.TitleHR.night{
+  background:#2b3a4f;
+  padding: 0px 5px 0px 5px;
+  transition: 0.5s;
+}
+
+.TitleHR{
+  background: #999999;
+  padding: 0px 5px 0px 5px;
+  transition: 0.5s;
+}
+
+/*hr:after {
   background: #fff;
   content: "§§§§§";
   padding: 0 4px;
   position: relative;
   top: -13px;
+}*/
+
+hr.night {
+  border: none;
+  border-top: 3px double rgb(255, 255, 255);
+  overflow: visible;
+  text-align: center;
+  height: 5px;
+  background-color: #2b3a4f;
 }
 
 #com1 {
@@ -75,4 +105,41 @@ fieldset {
   padding-right: 0.75em;
   border: groove 2px;
   border-radius: 5px;
+}
+
+.overlay.night {
+  background-image: url(../image/LoginNight.jpg);
+}
+
+
+.formulaire {
+  background: #999999;
+  color: black;
+  transition: 0.5s;
+  margin-top:20%;
+  transition: 0.5s;
+}
+
+.formulaire.night{
+  background: #2b3a4f;
+  color: white;
+  transition: 0.5s;
+}
+
+.NP{
+  margin-top:1em;
+}
+
+@media screen and (max-width: 768px) {
+  #com2 {
+    margin-left: 10%;
+  }
+
+  #com5 {
+    margin: 10%;
+  }
+  #com3 {
+    width: 60%;
+    margin: 20%;
+  }
 }

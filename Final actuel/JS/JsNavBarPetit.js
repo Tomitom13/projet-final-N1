@@ -19,6 +19,8 @@ if (sessionStorage.getItem("Nmode") == 2) {
   $(".card-header").toggleClass("night");
   $(".c1").toggleClass("night");
   $(".desc1").toggleClass("night");
+  $(".formulaire").toggleClass("night");
+  $(".TitleHRe").toggleClass("night");
 }
 
 function NightM() {
@@ -40,6 +42,8 @@ function NightM() {
     $(".card-header").toggleClass("night");
     $(".c1").toggleClass("night");
     $(".desc1").toggleClass("night");
+    $(".formulaire").toggleClass("night");
+    $(".TitleHR").toggleClass("night");
     sessionStorage.setItem("Nmode", 2);
   } else if (sessionStorage.getItem("Nmode") == 2) {
     $("body").toggleClass("night");
@@ -59,6 +63,8 @@ function NightM() {
     $(".card-header").toggleClass("night");
     $(".c1").toggleClass("night");
     $(".desc1").toggleClass("night");
+    $(".formulaire").toggleClass("night");
+    $(".TitleHR").toggleClass("night");
     sessionStorage.setItem("Nmode", 1);
   }
 }
