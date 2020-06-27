@@ -17,7 +17,7 @@ body {
 .overlay {
   position: absolute;
   z-index: -1;
-
+  width:100%;
 }
 .main-content {
   background: white;
@@ -53,7 +53,7 @@ h3 {
   font-size: 2.25rem;
   font-weight: 900;
   color: #4b4b4b;
-  
+
 }
 
 .navbar-links {
@@ -105,7 +105,7 @@ h3 {
     width:100%
 }
 
-.buton {     
+.buton {
     background-color: Transparent;
     background-repeat:no-repeat;
     border: none;
@@ -174,7 +174,7 @@ h3 {
     color:white;
 }
 
-.subtitle{
+.subtitle, .subtitle1{
     font-family: 'Vollkorn', serif;
 }
 

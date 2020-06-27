@@ -11,17 +11,37 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link href="../CSS/navbar.css" rel="stylesheet" type="text/css"/>
+        <link href="../CSS/nmode.css" rel="stylesheet" type="text/css"/>
         <link href="../CSS/cssreport.css" rel="stylesheet" type="text/css"/>
+        <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
 
     <body>
-        <a href="Contact.html">_I_I_I_I_</a>
+      <nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl" data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md" style="padding-top:15px;padding-bottom:15px;">
+          <div class="container-nav">
+              <div class="navbar-header">
+                  <button class="navbar-toggle collapsed buton" type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false">
+                      <!-- <span class="sr-only">Toggle navigation</span> -->
+                      <span class="icon-bar"><i class="fa fa-angle-double-down mr-1"></i></span>
+                  </button>
+                  <a class="navbar-brand" href="Accueil.html">Kebab master</a>
+                  <span onclick="NightM()"><img src="../image/nightmode.png" alt="" id="moon"></span>
+              </div>
+              <div class="collapse navbar-collapse" id="mobileNav">
+                  <div ><a class="navbar-links page" id="display" href="Login.html">login | register</a></div>
+                  <a class="navbar-links page" href="project.html"> Project</a> <br>
+                  <a class="navbar-links page" href="Estimate.html"> Devis</a> <br>
+              </div>
+          </div>
+      </nav>
+      <div class='overlay'>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-12">
-                    <div class="card bg-dark mb-3" style="width:100% ; margin-top: 5vh">
+                <div class="col-sm-12">
+                    <div class="card bg-dark mb-3" style="width:80% ; margin-top: 15em; margin-left:10%;">
                         <div class="card-header"><h4 >Un problemes rencontré ?</h4></div>
-                        <div class="card-body">
+                        <div class="card-body c1">
 
 
 
@@ -107,5 +127,6 @@ and open the template in the editor.
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="../JS/jsreport.js" type="text/javascript"></script>
+        <script src="../JS/JSNavBarPetit.js" type="text/javascript"></script>
     </body>
 </html>

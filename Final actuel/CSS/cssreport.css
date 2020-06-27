@@ -4,7 +4,7 @@
     text-align: center;
 }
 #choix{
-    margin-left: 23vw;
+    margin-left: 30%;
 }
 
 
@@ -13,7 +13,8 @@
 }
 
 #email{
-    width: 30vw;
+    width: 40%;
+    margin-left:10%;
 }
 
 #report4{
@@ -25,9 +26,47 @@ label.obligatoire:after{
     color: red;
 }
 
-body{
-    background-color: black;
-}
 #msg{
     width: 100%;
+}
+body{
+    background-color: lightgrey;
+    background-image: url(../image/Login.jpg);
+}
+
+.overlay.night{
+    background-image: url(../image/LoginNight.jpg);
+}
+
+.card-header.night{
+    background: #2b3a4f;
+    color:white;
+}
+.c1.night{
+    background: #2b3a4f;
+    color:white;
+}
+
+.card-header{
+    background: #999999;
+    color:black;
+}
+.c1{
+    background: #999999;
+    color:black;
+}
+
+@media screen and (max-width:768px){
+
+  #choix{
+    margin-left:0;
+  }
+
+  #report4{
+    margin:0;
+  }
+  #email{
+    width:100%;
+    margin:0;
+  }
 }

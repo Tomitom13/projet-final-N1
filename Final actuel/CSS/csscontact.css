@@ -54,11 +54,11 @@ body.night{
     margin-left:10%;
 }
 .card-header.night{
-    background: #024361;
+    background: #2b3a4f;
     color:white;
 }
 .c1.night{
-    background: #024361 ;
+    background: #2b3a4f;
     color:white;
 }
 
@@ -71,3 +71,6 @@ body.night{
     color:black;
 }
 
+.choice{
+  margin-left:5%;
+}
