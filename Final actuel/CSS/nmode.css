@@ -25,6 +25,7 @@ body.night {
   font-size: 2.25rem;
   font-weight: 900;
   color: white;
+  transition: 0.5s;
 
 }
 
@@ -44,55 +45,68 @@ body.night {
 }
 .navbar--color--white.night {
   background: red;
+  transition: 0.5s;
 }
 .navbar--color--primary.night {
   background: #37ca7e;
+  transition: 0.5s;
 }
 .navbar--color--secondary.night {
   background: #2b3a4f;
+  transition: 0.5s;
 }
 .navbar--color--ghost.night {
   background: rgba(0,0,0,0.2);
+  transition: 0.5s;
 }
 
 #title.night {
     background:#15202B;
     color:white;
+    transition: 0.5s;
 }
 
 idk.night{
     border-top:#2b3a4f solid 0.2em;
+    transition: 0.5s;
 }
 
 .overlay.night{
     background:#15202B;
     color:white;
+    transition: 0.5s;
 }
 
 .subtitle.night{
     background:#15202B;
     color:white;
+    transition: 0.5s;
 }
 
 .subtitle1.night{
     background:#2b3a4f;
     color:white;
+    transition: 0.5s;
 }
 
 
 .table.night{
     color:white;
+    transition: 0.5s;
 }
 
 .footer.night{
     background:#2b3a4f;
     color:white;
+    transition: 0.5s;
 }
 
 .navbar-links.night{
     color:white;
+    transition: 0.5s;
 }
 
 .button.night {
   background:#2b3a4f;
+  transition: 0.5s;
 }
