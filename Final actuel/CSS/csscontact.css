@@ -44,10 +44,11 @@ label.obligatoire:after{
 
 body{
     background-color: lightgrey;
+    background-image: url(../image/Login.jpg);
 }
 
-body.night{
-    background : #2b3a4f ;
+.overlay.night{
+    background-image: url(../image/LoginNight.jpg);
 }
 #msg{
     width: 80%;
