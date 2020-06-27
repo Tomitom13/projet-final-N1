@@ -413,3 +413,24 @@ input{
 .resume_lwh{
 display: inline-block;
 }
+
+.resume_color{
+    display: inline-block;
+    background-color: rgba(0, 38, 255, 0.226);
+    height: 3em;
+    width: 3em;
+    border-radius: 5px;
+    }
+
+.lesMeubles{
+    flex-direction: row;
+    display: flex;
+justify-content: space-around;
+
+}
+.resume_meuble{
+    width: 20%;
+}
+.resume_image{
+    width: 100%;
+}
