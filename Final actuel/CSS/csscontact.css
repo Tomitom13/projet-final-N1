@@ -50,6 +50,7 @@ body{
 .overlay.night{
     background-image: url(../image/LoginNight.jpg);
 }
+
 #msg{
     width: 80%;
     margin-left:10%;
@@ -57,19 +58,23 @@ body{
 .card-header.night{
     background: #2b3a4f;
     color:white;
+    transition:0.5s;
 }
 .c1.night{
     background: #2b3a4f;
     color:white;
+    transition:0.5s;
 }
 
 .card-header{
     background: #999999;
     color:black;
+    transition:0.5s;
 }
 .c1{
     background: #999999;
     color:black;
+    transition:0.5s;
 }
 
 .choice{

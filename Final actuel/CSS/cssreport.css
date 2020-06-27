@@ -41,19 +41,23 @@ body{
 .card-header.night{
     background: #2b3a4f;
     color:white;
+    transition:0.5s;
 }
 .c1.night{
     background: #2b3a4f;
     color:white;
+    transition:0.5s;
 }
 
 .card-header{
     background: #999999;
     color:black;
+    transition:0.5s;
 }
 .c1{
     background: #999999;
     color:black;
+    transition:0.5s;
 }
 
 @media screen and (max-width:768px){
