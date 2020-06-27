@@ -1,29 +1,25 @@
 @import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
-@import url('https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 
 /* ////////////////////////////////////////////////////////////////////// NAVBAR ////////////////////////////////////////////////////////// */
 
-
-
-
 body {
-  font-family: 'Lato', Arial, sans-serif;
+  font-family: "Lato", Arial, sans-serif;
   color: #6b6b6b;
   font-size: 17px;
   line-height: 1.6;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
 .overlay {
   position: absolute;
   z-index: -1;
-  width:100%;
+  width: 100%;
 }
 .main-content {
   background: white;
 }
-
 
 h2,
 h3 {
@@ -32,9 +28,8 @@ h3 {
 }
 
 .container-nav {
-    padding-left:3rem;
+  padding-left: 3rem;
 }
-
 
 /* ===================================== */
 /* ===== THE INTERESTING STUFF NOW ===== */
@@ -44,26 +39,25 @@ h3 {
   border: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  opacity : 100%;
-  position : fixed;
-  width: 100%
-/* --- navbar sizes --- */
-/* --- navbar colors --- */
+  opacity: 100%;
+  position: fixed;
+  width: 100%;
+  /* --- navbar sizes --- */
+  /* --- navbar colors --- */
 }
 .navbar-brand {
   font-size: 2.25rem;
   font-weight: 900;
   color: #4b4b4b;
-  transition:0.5s;
-
+  transition: 0.5s;
 }
 
 .navbar-links {
-    font-size: 1rem;
-    font-weight: 900;
-    color: #4b4b4b;
-    padding-left: 0.1rem;
-    padding-right: 0.1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #4b4b4b;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem;
 }
 .navbar--size--xl {
   padding: 4rem 0;
@@ -73,7 +67,7 @@ h3 {
 }
 .navbar--size--md {
   padding: 1rem 0;
-  opacity : 1;
+  opacity: 1;
 }
 .navbar--size--sm {
   padding: 0;
@@ -86,10 +80,10 @@ h3 {
 }
 .navbar--color--secondary {
   background: #43a6dd;
-  transition:0.5s;
+  transition: 0.5s;
 }
 .navbar--color--ghost {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 .navbar--color--ghost .navbar-brand,
 .navbar--color--ghost .navbar-text,
@@ -98,74 +92,71 @@ h3 {
 }
 
 #moon {
-    width:5rem;
-    height: auto;
-    float:right;
-    padding-right:2rem;
+  width: 5rem;
+  height: auto;
+  float: right;
+  padding-right: 2rem;
 }
 
-.container-nav{
-    width:100%
+.container-nav {
+  width: 100%;
 }
 
 .buton {
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .buton:focus {
-    border: none;
-    outline:none;
+  border: none;
+  outline: none;
 }
 
 .page:hover {
-    text-decoration:none;
+  text-decoration: none;
 }
 
-@media screen and (max-width:400px){
-    #moon {
-        width:4.4em;
-    }
-    .container-nav {
-    padding-left:10%;
-    }
+@media screen and (max-width: 400px) {
+  #moon {
+    width: 4.4em;
+  }
+  .container-nav {
+    padding-left: 10%;
+  }
 }
 
- /* ////////////////////////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////////// */
-
-
-
+/* ////////////////////////////////////////////////////////////////////// FOOTER ////////////////////////////////////////////////////////// */
 
 .footer {
-  background: #152F4F;
+  background: #152f4f;
   color: white;
-  transition:0.5s;
+  transition: 0.5s;
 }
 .footer .links ul {
   list-style-type: none;
 }
 .footer .links li a {
   color: white;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .footer .links li a:hover {
   text-decoration: none;
-  color: #4180CB;
+  color: #4180cb;
 }
 .footer .about-company i {
   font-size: 25px;
 }
 .footer .about-company a {
   color: white;
-  -webkit-transition: color .2s;
-  transition: color .2s;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
 }
 .footer .about-company a:hover {
-  color: #4180CB;
+  color: #4180cb;
 }
 .footer .location i {
   font-size: 18px;
@@ -174,19 +165,19 @@ h3 {
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.footerTitle2{
-    color:white;
+.footerTitle2 {
+  color: white;
 }
 
-.subtitle, .desc1{
-    font-family: 'Vollkorn', serif;
+.subtitle,
+.desc1 {
+  font-family: "Vollkorn", serif;
 }
 
-
-hr.night{
-    border-top:#2b3a4f solid 0.2em;
-    transition:0.5s;
+hr.night {
+  border-top: #2b3a4f solid 0.2em;
+  transition: 0.5s;
 }
-#title{
-    font-family: 'Playfair Display', serif;
+#title {
+  font-family: "Playfair Display", serif;
 }

@@ -1,115 +1,116 @@
-.carousel, .carousel-indicators {
-    padding-left: 4%;
-    padding-right: 4%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+.carousel,
+.carousel-indicators {
+  padding-left: 4%;
+  padding-right: 4%;
+  padding-top: 4%;
+  padding-bottom: 4%;
 }
 
 .pres {
-    margin-left: 0;
-    margin-right: 0;
-    width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
 }
 
-.pres_left{
-    width: 64%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+.pres_left {
+  width: 64%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
-.pres_right1{
-    width: 35%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    margin-left: 65%;
+.pres_right1 {
+  width: 35%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  margin-left: 65%;
 }
 
-@media (max-width: 768px){
-    .pres_left{
-    width: 100%;
-    text-align: center;
-    display: block;
-}
-
-.pres_right{
+@media (max-width: 768px) {
+  .pres_left {
     width: 100%;
     text-align: center;
     display: block;
-}
+  }
+
+  .pres_right {
+    width: 100%;
+    text-align: center;
+    display: block;
+  }
 }
 
 .image {
-    width: 100%;
+  width: 100%;
 }
 
 .textr {
-    text-align: left;
+  text-align: left;
 }
 
 .textl {
-    text-align: right;
+  text-align: right;
 }
 
 .projects {
-    margin: 0;
-    margin-right: 0;
-    width: 1000px;
+  margin: 0;
+  margin-right: 0;
+  width: 1000px;
 }
 
 .img2 {
-    width: 49%;
-    display: inline-block;
+  width: 49%;
+  display: inline-block;
 }
 
 .desc1 {
-    width: 49%;
-    display: inline-block;
-    background: lightgrey;
-    text-align: center;
-    padding-top: 22%;
-    padding-bottom: 22%;
-    transition:0.5s;
+  width: 49%;
+  display: inline-block;
+  background: lightgrey;
+  text-align: center;
+  padding-top: 22%;
+  padding-bottom: 22%;
+  transition: 0.5s;
 }
 
 .image1 {
-    width: 100%;
-    position: absolute;
-    margin-top: 0;
-    margin-left: 0;
+  width: 100%;
+  position: absolute;
+  margin-top: 0;
+  margin-left: 0;
 }
 
-.pres_left1{
-    width: 64%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    position: absolute;
+.pres_left1 {
+  width: 64%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  position: absolute;
 }
 
-.pres_right{
-    width: 35%;
-    margin: 0;
-    padding: 0;
-    display: inline-block;
+.pres_right {
+  width: 35%;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
 }
 
 a {
-    color: inherit;
-    background-color: transparent;
-    text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 a:hover {
-    color: inherit;
-    background-color: transparent;
-    text-decoration: none;
+  color: inherit;
+  background-color: transparent;
+  text-decoration: none;
 }
 
-.textDescG{
-    margin-right:20px;
+.textDescG {
+  margin-right: 20px;
 }
-.textDescD{
-    margin-left:20px;
+.textDescD {
+  margin-left: 20px;
 }

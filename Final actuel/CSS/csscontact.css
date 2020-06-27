@@ -1,82 +1,81 @@
-#contact1{
-    margin-left: 0;
-    width: 100%;
+#contact1 {
+  margin-left: 0;
+  width: 100%;
 }
 
-#nom{
-    margin-left: 0%;
+#nom {
+  margin-left: 0%;
 }
 
-#contact2{
-    margin-left: 0;
-    width: 100%;
+#contact2 {
+  margin-left: 0;
+  width: 100%;
 }
 
-#contact3{
-    margin-left:0;
-    width: 100%;
+#contact3 {
+  margin-left: 0;
+  width: 100%;
 }
 
-#contact4{
-    margin-left: 0;
-    width: 100%;
+#contact4 {
+  margin-left: 0;
+  width: 100%;
 }
 
-#contact5{
-    margin-left: 17%;
+#contact5 {
+  margin-left: 17%;
 }
 
-#contact6{
-    width: 100%;
-    margin-left:10%;
+#contact6 {
+  width: 100%;
+  margin-left: 10%;
 }
 
-#contact7{
-    margin-left: 83%;
-    float:right;
+#contact7 {
+  margin-left: 83%;
+  float: right;
 }
 
-
-label.obligatoire:after{
-    content: "*";
-    color: red;
+label.obligatoire:after {
+  content: "*";
+  color: red;
 }
 
-body{
-    background-color: lightgrey;
-    background-image: url(../image/Login.jpg);
+body {
+  background-color: lightgrey;
+  background-image: url(../image/Login.jpg);
 }
 
-.overlay.night{
-    background-image: url(../image/LoginNight.jpg);
+.overlay.night {
+  background-image: url(../image/LoginNight.jpg);
 }
 
-#msg{
-    width: 80%;
-    margin-left:10%;
+#msg {
+  width: 80%;
+  margin-left: 10%;
 }
-.card-header.night{
-    background: #2b3a4f;
-    color:white;
-    transition:0.5s;
+.card-header.night {
+  background: #2b3a4f;
+  color: white;
+  transition: 0.5s;
 }
-.c1.night{
-    background: #2b3a4f;
-    color:white;
-    transition:0.5s;
-}
-
-.card-header{
-    background: #999999;
-    color:black;
-    transition:0.5s;
-}
-.c1{
-    background: #999999;
-    color:black;
-    transition:0.5s;
+.c1.night {
+  background: #2b3a4f;
+  color: white;
+  transition: 0.5s;
 }
 
-.choice{
-  margin-left:5%;
+.card-header {
+  background: #999999;
+  color: black;
+  transition: 0.5s;
+}
+.c1 {
+  background: #999999;
+  color: black;
+  transition: 0.5s;
+}
+
+.choice {
+  margin-left: 5%;
 }

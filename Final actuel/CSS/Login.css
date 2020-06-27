@@ -1,15 +1,17 @@
- #errorNom,#errorPassword,#errorLogin{
-    display:none;
-    color: #D8000C;
-    font-size: 1em;
-    font-family: "Poppins", sans-serif;
+#errorNom,
+#errorPassword,
+#errorLogin {
+  display: none;
+  color: #d8000c;
+  font-size: 1em;
+  font-family: "Poppins", sans-serif;
 }
 
-#errorNom.visible,#errorPassword.visible,#errorLogin.visible{
-    display: inline;
+#errorNom.visible,
+#errorPassword.visible,
+#errorLogin.visible {
+  display: inline;
 }
-
-
 
 body {
   margin: 0;
@@ -22,7 +24,6 @@ body {
   height: 100vh;
   background-size: cover;
   background-position: center;
-
 }
 
 .bg-img:after {
@@ -67,7 +68,8 @@ body {
   line-height: 2.8em;
 }
 
-.field input,button {
+.field input,
+button {
   height: 100%;
   width: 100%;
   background: transparent;
@@ -112,7 +114,7 @@ button {
 }
 
 button:hover {
-    background: #333333;
+  background: #333333;
 }
 .login {
   margin: 1.3em 0;
@@ -129,4 +131,3 @@ button:hover {
 .signup a:hover {
   text-decoration: underline;
 }
-
