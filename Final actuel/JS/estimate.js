@@ -95,12 +95,12 @@ btnlogout.style.display = "none";
 
 btnregister.addEventListener("click", function () {
     localStorage.setItem("NamePerson", "");
-    window.location.href = "../LOGIN/HTML/register.html";
+    window.location.href = "../HTML/register.html";
 });
 
 btnlogin.addEventListener("click", function () {
   NamePerson = localStorage.setItem("NamePerson", "");
-    window.location.href = "../LOGIN/HTML/Login.html";
+    window.location.href = "../HTML/Login.html";
 });
 
 btnlogout.addEventListener("click", function () {
