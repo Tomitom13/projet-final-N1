@@ -78,7 +78,7 @@ function deleteStorage() {
 }
 
 function display_eyes() {
-  var pass_field = document.querySelector(".pass-key");
+  var pass_field = document.querySelector(".Password");
   var showBtn = document.querySelector(".show");
 
   pass_field.addEventListener("input", function () {
