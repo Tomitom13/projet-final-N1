@@ -450,11 +450,11 @@ flex-wrap: wrap;
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
-button.text{
+input.text{
   background-color:transparent;
   border: none;
 }
-button.text:focus{
+input.text:focus{
   background-color: white;
   border: none;
 }
@@ -610,10 +610,13 @@ p#resume_nbColor, #resume_price,#resume_price_value{
   border-radius: 5px;
   width: 80%;
   position: relative;
-  transition: all 5s ease-in-out;
+  /*transition: all 5s ease-in-out;*/
 }
 
-
+.none{
+  display:none;
+  position: absolute;
+}
 
 
 
@@ -662,4 +665,13 @@ p#resume_nbColor, #resume_price,#resume_price_value{
 .button1:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+#annuler{
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+}
+#annuler:hover{
+text-decoration: none;
 }

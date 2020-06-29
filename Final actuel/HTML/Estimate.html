@@ -63,7 +63,7 @@
 
         <h2 id="title">Estimate of work</h2>
         <br><br>
-        <form action="mailto:matthis.bernet@isen.yncrea.fr?Subject=Devis">
+        <form name='envoi' method="POST" enctype="text/plain" action="mailto:matthis.bernet@isen.yncrea.fr?Subject=Devis">
         <!--   <h3 id="Subtitle_1">Description</h3>-->
         <hr class="idk">
         <p class="on_hr"><span class="subtitle" id="title1">Dimensions</span></p>
@@ -71,11 +71,11 @@
 
         <section>
             <section class="Description">
-                <label>Length : </label><input id="length" type="number" min="0" max="99999" class="dimension">
+                <label>Length : </label><input name="length" id="length" type="number" min="0" max="99999" class="dimension">
                 <div class="unit">cm</div>
-                <label class="label_dimension">Width : </label><input type="number" min="0" max="99999" id="width" class="dimension">
+                <label class="label_dimension">Width : </label><input name="width" type="number" min="0" max="99999" id="width" class="dimension">
                 <div class="unit">cm</div>
-                <label class="label_dimension">Height : </label><input type="number" min="0" max="99999" id="height" class="dimension">
+                <label class="label_dimension">Height : </label><input name="height" type="number" min="0" max="99999" id="height" class="dimension">
                 <div class="unit">cm</div>
             </section>
         </section>
@@ -87,15 +87,15 @@
 
         <section>
             <section class="section_left">
-                    <label class="nb_color">Number of new Color :</label><input type="number" value="0" id="Nb_Color" max="5" min="0"><br>
+                    <label class="nb_color">Number of new Color :</label><input name="nbColor" type="number" value="0" id="Nb_Color" max="5" min="0"><br>
 
             </section>
             <section class="section_right">
-                    <label id="color1" class="color">Color 1 :</label><input type="color" id="color_choice_1" class="color_choice"><br>
-                    <label id="color2" class="color">Color 2 :</label><input type="color" id="color_choice_2" class="color_choice"><br>
-                    <label id="color3" class="color">Color 3 :</label><input type="color" id="color_choice_3" class="color_choice"><br>
-                    <label id="color4" class="color">Color 4 :</label><input type="color" id="color_choice_4" class="color_choice"><br>
-                    <label id="color5" class="color">Color 5 :</label><input type="color" id="color_choice_5" class="color_choice"><br>
+                    <label id="color1" class="color">Color 1 :</label><input name="color1"  type="color" id="color_choice_1" class="color_choice"><br>
+                    <label id="color2" class="color">Color 2 :</label><input name="color2" type="color" id="color_choice_2" class="color_choice"><br>
+                    <label id="color3" class="color">Color 3 :</label><input name="color3" type="color" id="color_choice_3" class="color_choice"><br>
+                    <label id="color4" class="color">Color 4 :</label><input name="color4" type="color" id="color_choice_4" class="color_choice"><br>
+                    <label id="color5" class="color">Color 5 :</label><input name="color5" type="color" id="color_choice_5" class="color_choice"><br>
             </section>
         </section>
         <br>
@@ -224,7 +224,7 @@
             <ul>
                 <div class="row">
                     <div class="col-md-4 ground">
-                        <li><input type="checkbox" id="ground_cb_1" />
+                        <li><input name="ground1" type="checkbox" id="ground_cb_1" />
                             <label class="square_view" for="ground_cb_1"><img class="ground_img" src="../image/furnitures/ground/Carrelage1.jpg" />
                                 <div class="ground_desription" id="ground_description_1">Carrelage 1</div>
                             </label>
@@ -232,7 +232,7 @@
                         </li>
                     </div>
                     <div class="col-md-4 ground">
-                        <li><input type="checkbox" id="ground_cb_2" />
+                        <li><input name="ground2" type="checkbox" id="ground_cb_2" />
                             <label class="square_view" for="ground_cb_2"><img class="ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
                                 <div class="ground_desription" id="ground_description_2">Carrelage 2</div>
                             </label>
@@ -240,7 +240,7 @@
                         </li>
                     </div>
                     <div class="col-md-4 ground">
-                        <li><input type="checkbox" id="ground_cb_3" />
+                        <li><input name="ground3" type="checkbox" id="ground_cb_3" />
                             <label class="square_view" for="ground_cb_3"><img class="ground_img" src="../image/furnitures/ground/parquet.jpg" />
                                 <div class="ground_desription" id="ground_description_3">Parquet 1</div>
                             </label>
@@ -256,10 +256,12 @@
             <div class="col-md-5"></div>
 
             <div class="col-md-2 ">
-                <a class="button" id="Valider" href="#popup1" style="vertical-align:middle"><span>Valider </span></a>
+                <a class="button" id="Valider" href="#popup1"  type="submit" style="vertical-align:middle" value="Valider"><span>Valider </span></a>
             </div>
         </div>
         <br>
+
+
         <div id="popup1" class="overlay2">
             <section class="resume">
 
@@ -306,6 +308,7 @@
                 </section>
                 <div id='resume_solChoice'>Sol(s) choisi(s) : </div>
                 <section class="lesSols">
+                    
                     <section class="resume_sol ground " id="resume_sol1">
                         <div class="square_view" for="ground_cb_2">
                             <img id="resume_solImage1" class="resume_solImage ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
@@ -333,11 +336,13 @@
                 <div id="resume_price">Estimation du prix de la prestation :<p id="resume_price_value">111</p>€</div>
                 <div class="buttonEnd">
                     <a>
-                        <button class="text" type="submit">Envoyer par mail</button>
+                        <input class="text" type="submit" value="Envoyer par mail">
                         <span class="line -right"></span>
                         <span class="line -top"></span>
                         <span class="line -left"></span>
                         <span class="line -bottom"></span>
+
+                        <a id="annuler" href="#">Annuler</a>
                     </a>
                 </div>
             </section>
