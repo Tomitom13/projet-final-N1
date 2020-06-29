@@ -158,6 +158,24 @@ function fillPopup(){
     document.getElementById('resume_solChoice').style.display = 'none';
   }
 
+  for(var i=1; i<=3; i++){
+    if (localStorage.getItem('bed' + i) != null && localStorage.getItem('bed' + i) != ''){
+      document.getElementById('resume_image' + i).src = '../image/furnitures/bed'+i;
+      document.getElementById('resume_name' + i).innerHTML = '' + i;
+
+    }
+    else {
+      document.getElementById('resume_meuble' + i).style.display = 'none';
+
+    }
+
+
+
+  }
+
+
+
+
 
 }
 

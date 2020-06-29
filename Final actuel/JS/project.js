@@ -1,5 +1,9 @@
+Title_Project = localStorage.getItem(
+  "Title_Project"
+);
+
 document.querySelector("#title").innerHTML = localStorage.getItem(
-  Title_Project + "_Title_Project"
+  "Title_Project"
 );
 document.querySelector("#Subtitle_1").innerHTML = localStorage.getItem(
   Title_Project + "_Title1"
