@@ -2,62 +2,63 @@
 
 <html lang="fr">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="autor" content="Millet Hugo, Bernet Matthis, Cousseau Mathias, Sorroche Loïc et BUTON Thomas">
-        <meta name="description" content="Site donnant accès à une multitude de cours">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-        <link href="../CSS/AdminCSSProject.css" rel="stylesheet" type="text/css"/>
-        <link href="../CSS/navbar.css" rel="stylesheet" type="text/css"/>
-        <link href="../CSS/nmode.css" rel="stylesheet" type="text/css"/>
-        <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <title>Archi</title> <!--  Nom du site affiché dans l'onglet  -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Millet Hugo, Bernet Matthis, Cousseau Mathias, Sorroche Loïc et BUTON Thomas">
+    <meta name="description" content="Site donnant accès à une multitude de cours">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="../CSS/AdminCSSProject.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/navbar.css" rel="stylesheet" type="text/css" />
+    <link href="../CSS/nmode.css" rel="stylesheet" type="text/css" />
+    <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <title>Page admin projets</title> <!--  Nom du site affiché dans l'onglet  -->
 
-    </head>
-    <body>
-       <nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl" data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md">
-            <div class="container-nav">
-                <div class="navbar-header">
-                    <button class="navbar-toggle collapsed buton" type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false">
-                        <!-- <span class="sr-only">Toggle navigation</span> -->
-                        <span class="icon-bar"><i class="fa fa-angle-double-down mr-1"></i></span>      
-                    </button> 
-                    <a class="navbar-brand" href="Accueil.html">Kebab master</a>
-                    <span onclick="NightM()"><img src="../image/nightmode.png" alt="" id="moon"></span>
-                </div>
-                <div class="collapse navbar-collapse" id="mobileNav">
-                    <h6 id="name"></h6>
-                    <div><button class="button1" id="login" style="vertical-align:middle"><span>Login</span></button>
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top navbar--color--ghost navbar--size--xl" data-startColor="navbar--color--ghost" data-startSize="navbar--size--xl" data-intoColor="navbar--color--secondary" data-intoSize="navbar--size--md">
+        <div class="container-nav">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed buton" type="button" data-toggle="collapse" data-target="#mobileNav" aria-expanded="false">
+                    <!-- <span class="sr-only">Toggle navigation</span> -->
+                    <span class="icon-bar"><i class="fa fa-angle-double-down mr-1"></i></span>
+                </button>
+                <a class="navbar-brand" href="Accueil.html">Home Design</a>
+                <span onclick="NightM()"><img src="../image/nightmode.png" alt="" id="moon"></span>
+            </div>
+            <div class="collapse navbar-collapse" id="mobileNav">
+                <h6 id="name"></h6>
+                <div><button class="button1" id="login" style="vertical-align:middle"><span>Login</span></button>
                     <button class="button1" id="register" style="vertical-align:middle"><span>register </span></button>
-                     <div><button class="button1" id="logout" style="vertical-align:middle"><span>Logout </span></button>
+                    <div><button class="button1" id="logout" style="vertical-align:middle"><span>Logout </span></button>
                     </div>
                     <a class="navbar-links page" href="project.html"> Project</a> <br>
                     <a class="navbar-links page" href="HTMLAdminEstimate.html"> Devis</a> <br>
                 </div>
             </div>
-        </nav>
+    </nav>
 
-        <div class="overlay">
-                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img id="Img_caroussel_1" src="../image/photo-of-living-room-1457842.jpg" class="d-block w-100 h-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="Img_caroussel_2" src="../image/interior-design-of-home-1643383.jpg" class="d-block w-100 h-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img id="Img_caroussel_3" src="../image/apartment-bed-bedroom-book-shelves-439227.jpg" class="d-block w-100 h-100" alt="...">
-                    </div>
+    <div class="overlay">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img id="Img_caroussel_1" src="../image/photo-of-living-room-1457842.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img id="Img_caroussel_2" src="../image/interior-design-of-home-1643383.jpg" class="d-block w-100 h-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img id="Img_caroussel_3" src="../image/apartment-bed-bedroom-book-shelves-439227.jpg" class="d-block w-100 h-100" alt="...">
                 </div>
             </div>
-            
+        </div>
+
         <div id="Change_Project">
             <label for="Title_Project">Title project :</label>
             <input type="text" class="Change_input" id="Title_Project">
@@ -73,15 +74,15 @@
 
 
         <label for="text_content_1">Description 1 :</label>
-        <div> 
-            <textarea id="text_content_1" class="Change_textarea"  name="text_content_1" rows="3" cols="100" ></textarea>
+        <div>
+            <textarea id="text_content_1" class="Change_textarea" name="text_content_1" rows="3" cols="100"></textarea>
         </div>
 
         <section>
-            <img id="Img_before_1" class="img_before" src="../image/69786526_2330927653841643_3051100133778259968_n.jpg" alt=""/>
-            <img id="Img_before_2" class="img_before" src="../image/IMG_2434.jpg" alt=""/>
-            <img id="Img_before_3" class="img_before" src="../image/IMG_2441-2.jpg" alt=""/>
-        </section>   
+            <img id="Img_before_1" class="img_before" src="../image/69786526_2330927653841643_3051100133778259968_n.jpg" alt="" />
+            <img id="Img_before_2" class="img_before" src="../image/IMG_2434.jpg" alt="" />
+            <img id="Img_before_3" class="img_before" src="../image/IMG_2441-2.jpg" alt="" />
+        </section>
         <hr>
         <div>
 
@@ -107,7 +108,7 @@
                     <div id="work3" class="workDiv col-md-2">
                         <img id="work3_before" class="work before" src="../image/IMG_2434.jpg" alt="" />
                         <img id="work3_after" class="work after" src="../image/IMG_2441-2.jpg" alt="" />
-                       <div><input type="text" class="Change_input_legend" id="Work3_legend"></div>
+                        <div><input type="text" class="Change_input_legend" id="Work3_legend"></div>
                     </div>
                     <div class="workSpace col-md-1"></div>
                     <div id="work4" class="workDiv col-md-2">
@@ -170,15 +171,15 @@
 
 
             <div>
-                <label  for="Title3">Title 3 :</label>
+                <label for="Title3">Title 3 :</label>
                 <input type="text" class="Change_input" id="Title3">
             </div>
 
 
             <div>
-                <label  for="text_content_2">Description 3 :</label>
+                <label for="text_content_2">Description 3 :</label>
                 <br>
-                <textarea id="text_content_2" class="Change_textarea" name="text_content_2" rows="3" cols="100" ></textarea>
+                <textarea id="text_content_2" class="Change_textarea" name="text_content_2" rows="3" cols="100"></textarea>
             </div>
 
             <section>
@@ -189,36 +190,43 @@
             <br>
             <br>
             <div>
-                <label  for="Title4">Title 4 :</label>
+                <label for="Title4">Title 4 :</label>
                 <input type="text" class="Change_input" id="Title4">
             </div>
             <section class="section_job job_left">
-               <div><label  for="Job1">Job :</label><input type="text" class="Change_input_job" id="Job1"></div><div><label  for="Worker1">Worker :</label><input type="text" class="Change_input" id="Worker1"></div><br>
-                <div><label  for="Job3">Job :</label><input type="text" class="Change_input_job" id="Job3"></div><div><label  for="Worker3">Worker :</label><input type="text" class="Change_input" id="Worker3"></div><br>
-                <div><label  for="Job5">Job :</label><input type="text" class="Change_input_job" id="Job5"></div><div><label  for="Worker5">Worker :</label><input type="text" class="Change_input" id="Worker5"></div>
+                <div><label for="Job1">Job :</label><input type="text" class="Change_input_job" id="Job1"></div>
+                <div><label for="Worker1">Worker :</label><input type="text" class="Change_input" id="Worker1"></div><br>
+                <div><label for="Job3">Job :</label><input type="text" class="Change_input_job" id="Job3"></div>
+                <div><label for="Worker3">Worker :</label><input type="text" class="Change_input" id="Worker3"></div><br>
+                <div><label for="Job5">Job :</label><input type="text" class="Change_input_job" id="Job5"></div>
+                <div><label for="Worker5">Worker :</label><input type="text" class="Change_input" id="Worker5"></div>
             </section>
             <section class="section_job job_right">
-                <div><label  for="Job2">Job :</label><input type="text" class="Change_input_job" id="Job2"></div><div><label  for="Worker2">Worker :</label><input type="text" class="Change_input" id="Worker2"></div><br>
-                <div><label  for="Job4">Job :</label><input type="text" class="Change_input_job" id="Job4"></div><div><label  for="Worker4">Worker :</label><input type="text" class="Change_input" id="Worker4"></div><br>
-                <div><label  for="Job6">Job :</label><input type="text" class="Change_input_job" id="Job6"></div><div><label  for="Worker6">Worker :</label><input type="text" class="Change_input" id="Worker6"></div>
+                <div><label for="Job2">Job :</label><input type="text" class="Change_input_job" id="Job2"></div>
+                <div><label for="Worker2">Worker :</label><input type="text" class="Change_input" id="Worker2"></div><br>
+                <div><label for="Job4">Job :</label><input type="text" class="Change_input_job" id="Job4"></div>
+                <div><label for="Worker4">Worker :</label><input type="text" class="Change_input" id="Worker4"></div><br>
+                <div><label for="Job6">Job :</label><input type="text" class="Change_input_job" id="Job6"></div>
+                <div><label for="Worker6">Worker :</label><input type="text" class="Change_input" id="Worker6"></div>
             </section>
             <br>
             <br>
             <br>
             <br>
-        <button id="updateData">Mettre à jour le localStorage</button>
-        <button id="removeData">Effacer le localStorage</button>
-        <button id="goBack">Retourner sur Project.html</button>
+            <button id="updateData">Mettre à jour le localStorage</button>
+            <button id="removeData">Effacer le localStorage</button>
+            <button id="goBack">Retourner sur Project.html</button>
             <br>
             <br>
             <br>
             <br>
         </div>
-            </body>
-            <script src="../JS/JSAdminProject.js" type="text/javascript"></script>
-               <script src="../JS/Btnlogin.js" type="text/javascript"></script>
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-                <script src="../JS/JSNavBar.js" type="text/javascript"></script>
+</body>
+<script src="../JS/JSAdminProject.js" type="text/javascript"></script>
+<script src="../JS/Btnlogin.js" type="text/javascript"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="../JS/JSNavBar.js" type="text/javascript"></script>
+
 </html>
