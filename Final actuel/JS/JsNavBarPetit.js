@@ -20,7 +20,7 @@ if (sessionStorage.getItem("Nmode") == 2) {
   $(".c1").toggleClass("night");
   $(".desc1").toggleClass("night");
   $(".formulaire").toggleClass("night");
-  $(".TitleHRe").toggleClass("night");
+  $(".TitleHR").toggleClass("night");
 }
 
 function NightM() {
