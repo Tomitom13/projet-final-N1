@@ -63,21 +63,21 @@
 
         <h2 id="title">Estimate of work</h2>
         <br><br>
-
+        <form action="mailto:matthis.bernet@isen.yncrea.fr?Subject=Devis">
         <!--   <h3 id="Subtitle_1">Description</h3>-->
         <hr class="idk">
         <p class="on_hr"><span class="subtitle" id="title1">Dimensions</span></p>
         <br>
 
         <section>
-            <form class="Description">
+            <section class="Description">
                 <label>Length : </label><input id="length" type="number" min="0" max="99999" class="dimension">
                 <div class="unit">cm</div>
                 <label class="label_dimension">Width : </label><input type="number" min="0" max="99999" id="width" class="dimension">
                 <div class="unit">cm</div>
                 <label class="label_dimension">Height : </label><input type="number" min="0" max="99999" id="height" class="dimension">
                 <div class="unit">cm</div>
-            </form>
+            </section>
         </section>
         <br>
 
@@ -87,19 +87,15 @@
 
         <section>
             <section class="section_left">
-                <form action="">
                     <label class="nb_color">Number of new Color :</label><input type="number" value="0" id="Nb_Color" max="5" min="0"><br>
-                </form>
 
             </section>
             <section class="section_right">
-                <form action="">
                     <label id="color1" class="color">Color 1 :</label><input type="color" id="color_choice_1" class="color_choice"><br>
                     <label id="color2" class="color">Color 2 :</label><input type="color" id="color_choice_2" class="color_choice"><br>
                     <label id="color3" class="color">Color 3 :</label><input type="color" id="color_choice_3" class="color_choice"><br>
                     <label id="color4" class="color">Color 4 :</label><input type="color" id="color_choice_4" class="color_choice"><br>
                     <label id="color5" class="color">Color 5 :</label><input type="color" id="color_choice_5" class="color_choice"><br>
-                </form>
             </section>
         </section>
         <br>
@@ -107,7 +103,7 @@
         <p class="on_hr"><span class="subtitle" id="title3">Furnitures</span></p>
         <section>
             <div>You have to choice the kind of furniture, and chose your(s) favorite(s) one(s)</div>
-            <form id="form_furniture" action="">
+            <section id="form_furniture" action="">
                 <label for="furniture">Type of furniture : </label>
                 <select id="furniture">
                     <option value="all">All</option>
@@ -218,7 +214,7 @@
                         </div>
                     </div>
                 </div>
-            </form>
+            </section>
         </section>
 
         <hr class="idk">
@@ -337,7 +333,7 @@
                 <div id="resume_price">Estimation du prix de la prestation :<p id="resume_price_value">111</p>€</div>
                 <div class="buttonEnd">
                     <a>
-                        <span class="text">Envoyer par mail</span>
+                        <button class="text" type="submit">Envoyer par mail</button>
                         <span class="line -right"></span>
                         <span class="line -top"></span>
                         <span class="line -left"></span>
@@ -346,6 +342,7 @@
                 </div>
             </section>
         </div>
+        </form>
         <br>
         <br>
         <br>

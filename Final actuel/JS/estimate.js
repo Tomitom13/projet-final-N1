@@ -1,4 +1,7 @@
-//!window.addEventListener("load", clearLocalS(), false);
+//window.addEventListener("load", clearLocalS(), false);
+
+
+
 
 
 document
@@ -10,7 +13,7 @@ window.addEventListener("load", displaycolor, false);
 window.addEventListener("load", fillPopup, false);
 
 document.querySelector("#Valider").addEventListener("click", saveData, false);
-document.querySelector("#Valider").addEventListener("click", fillPopup, false);
+//document.querySelector("#Valider").addEventListener("click", fillPopup, false);
 
 window.addEventListener("load", displayMeuble, false);
 document
@@ -55,6 +58,7 @@ function displayMeuble() {
 }
 
 function saveData() {
+  clearLocalS();
   localStorage.setItem("length", document.querySelector("#length").value);
   localStorage.setItem("width", document.querySelector("#width").value);
   localStorage.setItem("height", document.querySelector("#height").value);
@@ -94,6 +98,9 @@ function saveData() {
       localStorage.setItem("ground" + i, 1);
     }
   }
+
+  fillPopup();
+
 }
 
 
@@ -125,18 +132,48 @@ function clearLocalS(){
 
 
 function fillPopup(){
+  var prix = 0;
+  document.getElementById('resume_nbColor').innerHTML = ' ' + localStorage.getItem('nbColor') + ' ';
 
   
   if (localStorage.getItem('width') != '' && localStorage.getItem('length') != '' && localStorage.getItem('width') != null && localStorage.getItem('length') != null){
     document.getElementById('resume_length').innerHTML = localStorage.getItem('length');
     document.getElementById('resume_width').innerHTML = localStorage.getItem('width');
+
+    for(var i=1; i<=2; i++){
+
+      if (localStorage.getItem('ground' + i) != null && localStorage.getItem('ground' + i) != '') {
+        document.getElementById('resume_solImage' + i).src = '../image/furnitures/ground/Carrelage' + i + '.jpg';
+        document.getElementById('resume_solDiv' + i).innerHTML = 'Carrelage ' + i;
+        prix = prix + localStorage.getItem('width') / 100 * localStorage.getItem('length')/100 * 20;
+      }
+      else{
+        document.getElementById('resume_sol'+i ).style.display = 'none';
+      }
+
+    }
+    if (localStorage.getItem('ground' + 3) != null && localStorage.getItem('ground' + 3) != '') {
+      document.getElementById('resume_solImage' + 3).src = '../image/furnitures/ground/parquet'  + '.jpg';
+      document.getElementById('resume_solDiv' + 3).innerHTML = 'Parquet ' + 1;
+      prix = prix + localStorage.getItem('width') / 100 * localStorage.getItem('length') / 100 * 30;
+
+    }
+    else {
+      document.getElementById('resume_sol3').style.display = 'none';
+    }
+
     if (localStorage.getItem('height') != null && localStorage.getItem('height') != ''){
       document.getElementById('resume_height').innerHTML = localStorage.getItem('height');
-      for (var i = 1; i <= localStorage.getItem('nbColor'); i++){
-        document.getElementById('resume_color' + i).style.backgroundColor=localStorage.getItem('color'+i);
-      }
-      for (var i = 5; i > localStorage.getItem('nbColor'); i--) {
-        document.getElementById('resume_color' + i).style.display ='none';
+      if (localStorage.getItem('nbColor')!=0){
+        for (var i = 1; i <= localStorage.getItem('nbColor'); i++){
+          document.getElementById('resume_color' + i).style.backgroundColor=localStorage.getItem('color'+i);
+        }
+        for (var i = 5; i > localStorage.getItem('nbColor'); i--) {
+          document.getElementById('resume_color' + i).style.display ='none';
+        }
+        prix = prix + 2 * localStorage.getItem('width')/100 * localStorage.getItem('height')/100 + 2 * localStorage.getItem('length')/100 * localStorage.getItem('height')/100;
+        prix = prix * 15;
+        prix = prix + localStorage.getItem('nbColor')*40;
       }
     }
     else{
@@ -160,21 +197,48 @@ function fillPopup(){
 
   for(var i=1; i<=3; i++){
     if (localStorage.getItem('bed' + i) != null && localStorage.getItem('bed' + i) != ''){
-      document.getElementById('resume_image' + i).src = '../image/furnitures/bed'+i;
-      document.getElementById('resume_name' + i).innerHTML = '' + i;
-
+      document.getElementById('resume_image' + i).src = '../image/furnitures/bed/bed'+i+'.jpg';
+      document.getElementById('resume_name' + i).innerHTML = 'bed' + i;
+      switch(i){
+        case 1:
+          prix = prix + 549;
+          break;
+        case 2:
+          prix = prix + 325;
+          break;
+        case 3:
+          prix = prix + 194;
+          break;
+      }
     }
     else {
       document.getElementById('resume_meuble' + i).style.display = 'none';
-
     }
 
 
+    if (localStorage.getItem('table' + i) != null && localStorage.getItem('table' + i) != '') {
+      document.getElementById('resume_image' + (i + 3)).src = '../image/furnitures/table/table' + i+'.jpg';
+      document.getElementById('resume_name' + (i + 3)).innerHTML = 'table' + i;
+      switch (i) {
+        case 1:
+          prix = prix + 149;
+          break;
+        case 2:
+          prix = prix + 124;
+          break;
+        case 3:
+          prix = prix + 290;
+          break;
+      }
+    }
+    else {
+      document.getElementById('resume_meuble' + (i+3)).style.display = 'none';
+    }
 
   }
 
-
-
+//document.location.reload();
+  document.getElementById('resume_price_value').innerHTML = ' '+ prix +' ';
 
 
 }

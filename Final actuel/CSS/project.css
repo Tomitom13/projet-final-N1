@@ -450,7 +450,14 @@ flex-wrap: wrap;
   -webkit-justify-content: center;
   -webkit-align-items: center;
 }
-
+button.text{
+  background-color:transparent;
+  border: none;
+}
+button.text:focus{
+  background-color: white;
+  border: none;
+}
 .buttonEnd {
   background: #ffffff;
 }
