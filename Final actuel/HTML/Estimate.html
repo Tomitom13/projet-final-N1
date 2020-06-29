@@ -24,7 +24,8 @@
                         <!-- <span class="sr-only">Toggle navigation</span> -->
                         <span class="icon-bar"><i class="fa fa-angle-double-down mr-1"></i></span>      
                     </button> 
-                    <a class="navbar-brand" href="Accueil.html">Kebab master</a>
+                    <a class="navbar-brand" href="Accueil.html">Home design
+                    </a>
                     <span onclick="NightM()"><img src="../image/nightmode.png" alt="" id="moon"></span>
                 </div>
                 <div class="collapse navbar-collapse" id="mobileNav">
@@ -40,8 +41,24 @@
         </nav>
 
         <div  class="overlay">
-            <img id="Img_caroussel_2" src="../image/IMG_2434.jpg" class="d-block w-100" alt="...">
-
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img id="Img_caroussel_1" src="../image/photo-of-living-room-1457842.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item active">
+                        <img id="Img_caroussel_2" src="../image/interior-design-of-home-1643383.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="Img_caroussel_3" src="../image/apartment-bed-bedroom-book-shelves-439227.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                </div>
+            </div>
             
 
             <h2 id="title">Estimate of work</h2>
@@ -239,8 +256,8 @@
             <section class="resume">
 
                 <div id="resume_title">Le devis</div>
-                <div id="resume_dimensions">Dimensions de la pièce : <p id="resume_length" class='resume_lwh'></p>x<p id="resume_width" class='resume_lwh'></p>x<p id="resume_heigth" class='resume_lwh'></p></div>
-                <div>Vous avez choisis<p id="resume_nbColor"></p>couleur(s) pour les murs</div>
+                <div id="resume_dimensions">Dimensions de la pièce : <p id="resume_length" class='resume_lwh'></p>x<p id="resume_width" class='resume_lwh'></p>x<p id="resume_height" class='resume_lwh'></p></div>
+                <div id="resume_divColor">Vous avez choisis<p id="resume_nbColor"></p>couleur(s) pour les murs</div>
 
                 <div class="resume_color" id="resume_color1"></div>
                 <div class="resume_color" id="resume_color2"></div>
@@ -278,7 +295,7 @@
                     <div class="resume_name" id="resume_name1">name</div>
                 </section>
 				</section>
-                <div>Sol(s) choisi(s) : </div>
+                <div id='resume_solChoice'>Sol(s) choisi(s) : </div>
                 <section class="lesSols">
                     <section class="resume_sol ground " id="resume_sol1">
                          <div class="square_view" for="ground_cb_2">
@@ -307,19 +324,16 @@
                 <div id="resume_price">Estimation du prix de la prestation :<p id="resume_price_value">111</p>€</div>
                 <div class="buttonEnd">
                     <a>
-    <span class="text">Enregistrer et envoyer</span>
+    <span class="text">Envoyer par mail</span>
     <span class="line -right"></span>
     <span class="line -top"></span>
     <span class="line -left"></span>
     <span class="line -bottom"></span>
-    
   </a>
                 </div>
-
 			</section>
 			</div>
             <br>
-            
             <br>
             <br>
             <br>
@@ -352,7 +366,6 @@
                     </div>
                     <div class="row mt-5">
                         <div class="col copyright">
-                            <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
                         </div>
                     </div>
                 </div>
