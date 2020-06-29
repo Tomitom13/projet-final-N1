@@ -19,40 +19,6 @@ body {
   box-sizing: border-box;
 }
 
-
-
-.content h1 {
-  color: white;
-  font-size: 2em;
-  font-weight: 400;
-  margin: 0 0 0.7em 0;
-  font-family: "Montserrat", sans-serif;
-}
-
-.field {
-  height: 2.8em;
-  width: 100%;
-  display: flex;
-  background: white;
-}
-
-.field span {
-  color: #222;
-  width: 2.5em;
-  line-height: 2.8em;
-}
-
-.field input,
-button {
-  height: 100%;
-  width: 100%;
-  background: transparent;
-  border: none;
-  outline: none;
-  color: #222;
-  font-size: 1em;
-}
-
 .bg-img {
   background-image: url(../image/Login.jpg);
   height: 100vh;
@@ -68,7 +34,7 @@ button {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.content {
+.content{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,6 +45,37 @@ button {
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.05);
   box-shadow: -1px 4px 28px 0px rgba(0, 0, 0, 0.75);
+}
+
+.content h1{
+  color: white;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0 0 0.7em 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.input {
+  height: 2.8em;
+  width: 100%;
+  display: flex;
+  background: white;
+}
+
+.input span {
+  color: #222;
+  width: 2.5em;
+  line-height: 2.8em;
+}
+
+.input input,button {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 1em;
 }
 
 .space {
