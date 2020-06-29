@@ -1,8 +1,12 @@
+window.addEventListener("load", clearLocalS(), false);
+
+
 document
   .querySelector("#Nb_Color")
   .addEventListener("change", displaycolor, false);
 window.addEventListener("load", displaycolor, false);
 
+document.querySelector("#Valider").addEventListener("click", saveData, false);
 document.querySelector("#Valider").addEventListener("click", saveData, false);
 
 window.addEventListener("load", displayMeuble, false);
@@ -68,7 +72,7 @@ function saveData() {
     document.querySelector("#color_choice_4").value
   );
   localStorage.setItem(
-    "color4",
+    "color5",
     document.querySelector("#color_choice_5").value
   );
 
@@ -85,4 +89,49 @@ function saveData() {
       localStorage.setItem("ground" + i, 1);
     }
   }
+}
+
+
+function clearLocalS(){
+  localStorage.removeItem('ground1');
+  localStorage.removeItem('ground2');
+  localStorage.removeItem('ground3');
+  localStorage.removeItem('ground4');
+  localStorage.removeItem('ground5');
+
+  localStorage.removeItem('color1');
+  localStorage.removeItem('color2');
+  localStorage.removeItem('color3');
+  localStorage.removeItem('color4');
+  localStorage.removeItem('color5');
+
+  localStorage.removeItem('length');
+  localStorage.removeItem('width');
+  localStorage.removeItem('heigth');
+
+  localStorage.removeItem('table1');
+  localStorage.removeItem('table2');
+  localStorage.removeItem('table3');
+
+  localStorage.removeItem('bed1');
+  localStorage.removeItem('bed2');
+  localStorage.removeItem('bed3');
+}
+
+
+function fillPopup(){
+
+  if (localStorage.getItem('width') != null && localStorage.getItem('length') != null){
+    document.getElementById('resume_length') = localStorage.getItem('length');
+    document.getElementById('resume_width') = localStorage.getItem('width');
+    if (localStorage.getItem('heigth') != null){
+      document.getElementById('resume_heigth') = localStorage.getItem('heigth');
+    }
+
+  }
+  else{
+    document.getElementById('resume_dimension').style.display='none';
+  }
+
+
 }
