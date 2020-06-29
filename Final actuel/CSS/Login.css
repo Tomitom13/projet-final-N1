@@ -89,20 +89,6 @@ button {
   cursor: pointer;
 }
 
-.pass {
-  text-align: left;
-  margin: 10px 0;
-}
-.pass a {
-  color: white;
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-}
-
-.pass:hover a {
-  text-decoration: underline;
-}
-
 button {
   background: #222;
   border: 1px solid black;
