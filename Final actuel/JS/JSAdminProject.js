@@ -193,3 +193,8 @@ function retourIndex() {
   window.location.href = "../HTML/project.html";
 }
 
+document.querySelector("#Title_Project").addEventListener("change",fctchange, false);
+
+function fctchange(){
+    localStorage.setItem("Title_Project", document.querySelector("#Title_Project").value);
+    }
