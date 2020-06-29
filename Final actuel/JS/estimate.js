@@ -1,18 +1,23 @@
-window.addEventListener("load", clearLocalS(), false);
+//!window.addEventListener("load", clearLocalS(), false);
 
 
 document
   .querySelector("#Nb_Color")
   .addEventListener("change", displaycolor, false);
 window.addEventListener("load", displaycolor, false);
+//TODO window.addEventListener("load", saveData, false);
+
+window.addEventListener("load", fillPopup, false);
 
 document.querySelector("#Valider").addEventListener("click", saveData, false);
-document.querySelector("#Valider").addEventListener("click", saveData, false);
+document.querySelector("#Valider").addEventListener("click", fillPopup, false);
 
 window.addEventListener("load", displayMeuble, false);
 document
   .querySelector("#furniture")
   .addEventListener("change", displayMeuble, false);
+
+
 
 function displaycolor() {
   var nb = document.querySelector("#Nb_Color").value;
@@ -121,16 +126,36 @@ function clearLocalS(){
 
 function fillPopup(){
 
-  if (localStorage.getItem('width') != null && localStorage.getItem('length') != null){
-    document.getElementById('resume_length') = localStorage.getItem('length');
-    document.getElementById('resume_width') = localStorage.getItem('width');
-    if (localStorage.getItem('heigth') != null){
-      document.getElementById('resume_heigth') = localStorage.getItem('heigth');
+  
+  if (localStorage.getItem('width') != '' && localStorage.getItem('length') != '' && localStorage.getItem('width') != null && localStorage.getItem('length') != null){
+    document.getElementById('resume_length').innerHTML = localStorage.getItem('length');
+    document.getElementById('resume_width').innerHTML = localStorage.getItem('width');
+    if (localStorage.getItem('height') != null && localStorage.getItem('height') != ''){
+      document.getElementById('resume_height').innerHTML = localStorage.getItem('height');
+      for (var i = 1; i <= localStorage.getItem('nbColor'); i++){
+        document.getElementById('resume_color' + i).style.backgroundColor=localStorage.getItem('color'+i);
+      }
+      for (var i = 5; i > localStorage.getItem('nbColor'); i--) {
+        document.getElementById('resume_color' + i).style.display ='none';
+      }
     }
-
+    else{
+      document.getElementById('resume_height').innerHTML = '--';
+      for (var i = 1; i <= 5; i++) {
+        document.getElementById('resume_color' + i).style.display = 'none';
+      }
+    }
   }
   else{
-    document.getElementById('resume_dimension').style.display='none';
+    document.getElementById('resume_dimensions').style.display='none';
+    document.getElementById('resume_divColor').style.display = 'none';
+    for(var i=1; i<=5; i++){
+      document.getElementById('resume_color'+i).style.display = 'none';
+    }
+    for (var i = 1; i <= 3; i++) {
+      document.getElementById('resume_sol' + i).style.display = 'none';
+    }
+    document.getElementById('resume_solChoice').style.display = 'none';
   }
 
 
