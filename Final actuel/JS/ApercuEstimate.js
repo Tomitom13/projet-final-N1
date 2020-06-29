@@ -49,4 +49,4 @@ document.querySelector("#furniture_description_6").innerHTML = localStorage.getI
 
 
 
-document.querySelector("#display").innerHTML = localStorage.getItem("NamePerson");
+

@@ -1,4 +1,5 @@
 localStorage.setItem("admin", "hugohugohugo");
+localStorage.setItem("NamePerson", "");
 
 function login() {
   var username = document.querySelector("#username").value;
@@ -16,6 +17,7 @@ function login() {
       localStorage.setItem("NamePerson", username);
     }
   } else {
+    localStorage.setItem("NamePerson", "");
     document.querySelector(
       "#errorLogin"
     ).innerHTML = "incorrect username or password !".bold();
@@ -72,7 +74,7 @@ function register() {
 function deleteStorage() {
   localStorage.clear();
   localStorage.setItem("admin", "hugohugohugo");
-  localStorage.setItem("NamePerson", "login | register");
+  localStorage.setItem("NamePerson", "");
 }
 
 function display_eyes() {
