@@ -92,7 +92,6 @@ function valetoile(a){
    else if(a===5){
        localStorage.setItem(valeurselect + "_etoile", 5);
    }
-    
 }
 
 function miseAJourData() {
@@ -103,6 +102,14 @@ function miseAJourData() {
 
 
 
+for(var i=0; i<=5; i++){
+    if (localStorage.getItem("Projet" + i) != '' && localStorage.getItem("Projet" + i) != null){
+        document.getElementById('choix' + i).value = localStorage.getItem("Projet" + i);
+    }
+    else{
+        document.getElementById('choix' + i).style.display = 'none';
 
+    }
+}
 
 

@@ -33,3 +33,16 @@ document.querySelector("#work8_legend").innerHTML = localStorage.getItem( Title_
 document.querySelector("#work9_legend").innerHTML = localStorage.getItem(Title_Project + "_Work9_legend" );
 document.querySelector("#work10_legend").innerHTML = localStorage.getItem(Title_Project + "_Work10_legend");
 document.querySelector("#work11_legend").innerHTML = localStorage.getItem(Title_Project + "_Work11_legend");
+
+
+document.querySelector("#comment").innerHTML = localStorage.getItem(Title_Project + "_commentaire");
+
+if (localStorage.getItem(Title_Project + '_etoile') != null && localStorage.getItem(Title_Project + '_etoile') != ''){
+    for (var i = 1; i <= localStorage.getItem(Title_Project + '_etoile'); i++){
+        document.getElementById('etoile'+i).style.color = 'orange';
+    }
+}
+else{
+    document.getElementsByClassName('rating').style.display='none';
+}
+
