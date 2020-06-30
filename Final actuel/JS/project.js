@@ -39,10 +39,10 @@ document.querySelector("#comment").innerHTML = localStorage.getItem(Title_Projec
 
 if (localStorage.getItem(Title_Project + '_etoile') != null && localStorage.getItem(Title_Project + '_etoile') != ''){
     for (var i = 1; i <= localStorage.getItem(Title_Project + '_etoile'); i++){
-        document.getElementById('etoile'+i).style.color = 'orange';
+        document.getElementById('etoile'+(6-i)).style.color = 'orange';
     }
 }
 else{
-    document.getElementsByClassName('rating').style.display='none';
+    document.getElementById('lesEtoiles').style.display='none';
 }
 

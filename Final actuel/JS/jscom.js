@@ -11,7 +11,7 @@ function Verifnom() {
         nom.style.borderColor = "green";
         return n = true;
     }
-    window.addEventListerner("load", Verifnom);
+   window.addEventListerner("load", Verifnom);
 }
 ;
 
@@ -27,7 +27,7 @@ function Verifprenom() {
         prenom.style.borderColor = "green";
         return p = true;
     }
-    window.addEventListerner("load", Verifprenom);
+   window.addEventListerner("load", Verifprenom);
 }
 ;
 
@@ -52,7 +52,7 @@ function Valid(m, p, n) {
         alert("Le formulaire va être envoyé !");
         document.envoi.submit();
     }
-    window.addEventListerner("load", Valid);
+   // window.addEventListerner("load", Valid, false);
 }
 ;
 function resetForm() {
@@ -72,11 +72,26 @@ function resetForm() {
 ;
 
 
-
-var valeurselect = document.getElementById("com3").value;
-var comment = document.getElementById("msg").value;
-
 function valetoile(a){
+    var valeurselect
+    switch (document.getElementById("com3").value) {
+        case 'choix1':
+            valeurselect = localStorage.getItem('Projet1');
+            break;
+        case 'choix2':
+            valeurselect = localStorage.getItem('Projet2');
+            break;
+        case 'choix3':
+            valeurselect = localStorage.getItem('Projet3');
+            break;
+        case 'choix4':
+            valeurselect = localStorage.getItem('Projet4');
+            break;
+        case 'choix5':
+            valeurselect = localStorage.getItem('Projet5');
+            break;
+    }
+
    if(a===1){
        localStorage.setItem(valeurselect + "_etoile", 1);
    }
@@ -95,16 +110,38 @@ function valetoile(a){
 }
 
 function miseAJourData() {
+    var valeurselect
+    switch (document.getElementById("com3").value) {
+        case 'choix1':
+            valeurselect = localStorage.getItem('Projet1');
+            break;
+        case 'choix2':
+            valeurselect = localStorage.getItem('Projet2');
+            break;
+        case 'choix3':
+            valeurselect = localStorage.getItem('Projet3');
+            break;
+        case 'choix4':
+            valeurselect = localStorage.getItem('Projet4');
+            break;
+        case 'choix5':
+            valeurselect = localStorage.getItem('Projet5');
+            break;
+    }
+    var comment = document.getElementById("msg").value;
+
     if (comment.value !== "") {
-        localStorage.setItem(valeurselect + "_commentaire", comment.value);
+        
+        localStorage.setItem(valeurselect + "_commentaire", comment);
     }
 }
 
 
 
-for(var i=0; i<=5; i++){
+for(var i=1; i<=5; i++){
+
     if (localStorage.getItem("Projet" + i) != '' && localStorage.getItem("Projet" + i) != null){
-        document.getElementById('choix' + i).value = localStorage.getItem("Projet" + i);
+        document.getElementById('choix' + i).innerHTML = localStorage.getItem("Projet" + i);
     }
     else{
         document.getElementById('choix' + i).style.display = 'none';
