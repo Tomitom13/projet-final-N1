@@ -12,7 +12,7 @@
     <link href="../CSS/navbar.css" rel="stylesheet" type="text/css" />
     <link href="../CSS/nmode.css" rel="stylesheet" type="text/css" />
     <link href="../font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
-    <title>Home Design - Devis en ligne</title> <!--  Nom du site affiché dans l'onglet  -->
+    <title>Arch'ISEN - Devis en ligne</title> <!--  Nom du site affiché dans l'onglet  -->
 
 </head>
 
@@ -24,7 +24,7 @@
                     <!-- <span class="sr-only">Toggle navigation</span> -->
                     <span class="icon-bar"><i class="fa fa-angle-double-down mr-1"></i></span>
                 </button>
-                <a class="navbar-brand" href="Accueil.html">Home design
+                <a class="navbar-brand" href="Accueil.html">Arch'ISEN
                 </a>
                 <span onclick="NightM()"><img src="../image/nightmode.png" alt="" id="moon"></span>
             </div>
@@ -33,7 +33,7 @@
                 <div><button class="button1" id="login" style="vertical-align:middle"><span>Login</span></button>
                     <button class="button1" id="register" style="vertical-align:middle"><span>register </span></button>
                     <div>
-                         <button class="button1" id="Admin" style="vertical-align:middle"><span>Admin </span></button>
+                        <button class="button1" id="Admin" style="vertical-align:middle"><span>Admin </span></button>
                         <button class="button1" id="logout" style="vertical-align:middle"><span>Logout </span></button>
                     </div>
                     <a class="navbar-links page" href="project.html"> Project</a> <br>
@@ -66,289 +66,289 @@
         <h2 id="title">Estimate of work</h2>
         <br><br>
         <form name='envoi' method="POST" enctype="text/plain" action="mailto:matthis.bernet@isen.yncrea.fr?Subject=Devis">
-        <!--   <h3 id="Subtitle_1">Description</h3>-->
-        <hr class="idk">
-        <p class="on_hr"><span class="subtitle" id="title1">Dimensions</span></p>
-        <br>
+            <!--   <h3 id="Subtitle_1">Description</h3>-->
+            <hr class="idk">
+            <p class="on_hr"><span class="subtitle" id="title1">Dimensions</span></p>
+            <br>
 
-        <section>
-            <section class="Description">
-                <label>Length : </label><input name="length" id="length" type="number" min="0" max="99999" class="dimension">
-                <div class="unit">cm</div>
-                <label class="label_dimension">Width : </label><input name="width" type="number" min="0" max="99999" id="width" class="dimension">
-                <div class="unit">cm</div>
-                <label class="label_dimension">Height : </label><input name="height" type="number" min="0" max="99999" id="height" class="dimension">
-                <div class="unit">cm</div>
+            <section>
+                <section class="Description">
+                    <label>Length : </label><input name="length" id="length" type="number" min="0" max="99999" class="dimension">
+                    <div class="unit">cm</div>
+                    <label class="label_dimension">Width : </label><input name="width" type="number" min="0" max="99999" id="width" class="dimension">
+                    <div class="unit">cm</div>
+                    <label class="label_dimension">Height : </label><input name="height" type="number" min="0" max="99999" id="height" class="dimension">
+                    <div class="unit">cm</div>
+                </section>
             </section>
-        </section>
-        <br>
+            <br>
 
-        <!--  <h3 id="Subtitle_2">Choices</h3>-->
-        <hr class="idk">
-        <p class="on_hr"><span class="subtitle" id="title2">Wall</span></p>
+            <!--  <h3 id="Subtitle_2">Choices</h3>-->
+            <hr class="idk">
+            <p class="on_hr"><span class="subtitle" id="title2">Wall</span></p>
 
-        <section>
-            <section class="section_left">
+            <section>
+                <section class="section_left">
                     <label class="nb_color">Number of new Color :</label><input name="nbColor" type="number" value="0" id="Nb_Color" max="5" min="0"><br>
 
-            </section>
-            <section class="section_right">
-                    <label id="color1" class="color">Color 1 :</label><input name="color1"  type="color" id="color_choice_1" class="color_choice"><br>
+                </section>
+                <section class="section_right">
+                    <label id="color1" class="color">Color 1 :</label><input name="color1" type="color" id="color_choice_1" class="color_choice"><br>
                     <label id="color2" class="color">Color 2 :</label><input name="color2" type="color" id="color_choice_2" class="color_choice"><br>
                     <label id="color3" class="color">Color 3 :</label><input name="color3" type="color" id="color_choice_3" class="color_choice"><br>
                     <label id="color4" class="color">Color 4 :</label><input name="color4" type="color" id="color_choice_4" class="color_choice"><br>
                     <label id="color5" class="color">Color 5 :</label><input name="color5" type="color" id="color_choice_5" class="color_choice"><br>
+                </section>
             </section>
-        </section>
-        <br>
-        <hr class="idk">
-        <p class="on_hr"><span class="subtitle" id="title3">Furnitures</span></p>
-        <section>
-            <div>You have to choice the kind of furniture, and chose your(s) favorite(s) one(s)</div>
-            <section id="form_furniture" action="">
-                <label for="furniture">Type of furniture : </label>
-                <select id="furniture">
-                    <option value="all">All</option>
-                    <option value="bed">Bed</option>
-                    <option value="table">Table</option>
-                    <!--  <option value="desk">Desk</option>
+            <br>
+            <hr class="idk">
+            <p class="on_hr"><span class="subtitle" id="title3">Furnitures</span></p>
+            <section>
+                <div>You have to choice the kind of furniture, and chose your(s) favorite(s) one(s)</div>
+                <section id="form_furniture" action="">
+                    <label for="furniture">Type of furniture : </label>
+                    <select id="furniture">
+                        <option value="all">All</option>
+                        <option value="bed">Bed</option>
+                        <option value="table">Table</option>
+                        <!--  <option value="desk">Desk</option>
                               <option value="seat">Seat</option>
                               <option value="sofa">Sofa</option>  -->
-                </select>
+                    </select>
 
-                <div class="container">
+                    <div class="container">
+                        <div class="row">
+
+                            <div id="bed1" class="select_furniture bed col-md-5 ">
+                                <input type="checkbox" name="Bed1" id="bed1_input" class="checkbox">
+                                <label for="bed1_input">
+                                    <div class="container row">
+                                        <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/bed/bed1.jpg" alt=""></div>
+                                        <section class="furniture_right col-sm-7">
+                                            <div class="furniture_name" id="furniture_name_1">Bed 1</div>
+                                            <div class="furniture_dimension">
+                                                <div class="length" id="length1">120</div>x<div class="width" id="width1">80</div>x<div class="height" id="height1">90</div>
+                                            </div>
+                                            <p class="furniture_description" id="furniture_description_1">Très confortable</p>
+                                        </section>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="bed2" class="select_furniture bed col-md-5 ">
+                                <input type="checkbox" name="Bed2" id="bed2_input" class="checkbox">
+                                <label for="bed2_input">
+                                    <div class="container row">
+                                        <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/bed/bed2.jpg" alt=""></div>
+                                        <section class="furniture_right col-sm-7">
+                                            <div class="furniture_name" id="furniture_name_2">Bed 2</div>
+                                            <div class="furniture_dimension">
+                                                <div class="length" id="length2">120</div>x<div class="width" id="width2">80</div>x<div class="height" id="height2">90</div>
+                                            </div>
+                                            <p class="furniture_description" id="furniture_description_2">Plutôt pas mal</p>
+                                        </section>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="bed3" class="select_furniture bed col-md-5 ">
+                                <input type="checkbox" name="Bed3" id="bed3_input" class="checkbox">
+                                <label for="bed3_input">
+                                    <div class="container row">
+                                        <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/bed/bed3.jpg" alt=""></div>
+                                        <section class="furniture_right col-sm-7">
+                                            <div class="furniture_name" id="furniture_name_3">Bed 3</div>
+                                            <div class="furniture_dimension">
+                                                <div class="length" id="length3">120</div>x<div class="width" id="width3">80</div>x<div class="height" id="height3">90</div>
+                                            </div>
+                                            <p class="furniture_description" id="furniture_description_3">Nickel</p>
+                                        </section>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="table1" class="select_furniture table col-md-5 ">
+                                <input type="checkbox" name="Table1" id="table1_input" class="checkbox">
+                                <label for="table1_input">
+                                    <div class="container row">
+                                        <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/table/table1.jpg" alt=""></div>
+                                        <section class="furniture_right col-sm-7">
+                                            <div class="furniture_name" id="furniture_name_4">table 1</div>
+                                            <div class="furniture_dimension">
+                                                <div class="length" id="length4">120</div>x<div class="width" id="width4">80</div>x<div class="height" id="height4">90</div>
+                                            </div>
+                                            <p class="furniture_description" id="furniture_description_4">Vive la longueur</p>
+                                        </section>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="table2" class="select_furniture table col-md-5 ">
+                                <input type="checkbox" name="Table3" id="table2_input" class="checkbox">
+                                <label for="table2_input">
+                                    <div class="container row">
+                                        <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/table/table2.jpg" alt=""></div>
+                                        <section class="furniture_right col-sm-7">
+                                            <div class="furniture_name" id="furniture_name_5">table 2</div>
+                                            <div class="furniture_dimension">
+                                                <div class="length" id="length5">120</div>x<div class="width" id="width5">80</div>x<div class="height" id="height5">90</div>
+                                            </div>
+                                            <p class="furniture_description" id="furniture_description_5">Très bien pour travailler</p>
+                                        </section>
+                                    </div>
+                                </label>
+                            </div>
+
+                            <div id="table3" class="select_furniture table col-md-5 ">
+                                <input type="checkbox" name="Table3" id="table3_input" class="checkbox">
+                                <label for="table3_input">
+                                    <div class="container row">
+                                        <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/table/table3.jpg" alt=""></div>
+                                        <section class="furniture_right col-sm-7">
+                                            <div class="furniture_name" id="furniture_name_6">table 3</div>
+                                            <div class="furniture_dimension">
+                                                <div class="length" id="length6">120</div>x<div class="width" id="width6">80</div>x<div class="height" id="height6">90</div>
+                                            </div>
+                                            <p class="furniture_description" id="furniture_description_6">Originale</p>
+                                        </section>
+                                    </div>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <hr class="idk">
+            <p class="on_hr"><span class="subtitle" id="title4">Ground</span></p>
+
+            <div class="container">
+                <ul>
                     <div class="row">
+                        <div class="col-md-4 ground">
+                            <li><input name="ground1" type="checkbox" id="ground_cb_1" />
+                                <label class="square_view" for="ground_cb_1"><img class="ground_img" src="../image/furnitures/ground/Carrelage1.jpg" />
+                                    <div class="ground_desription" id="ground_description_1">Carrelage 1</div>
+                                </label>
 
-                        <div id="bed1" class="select_furniture bed col-md-5 ">
-                            <input type="checkbox" name="Bed1" id="bed1_input" class="checkbox">
-                            <label for="bed1_input">
-                                <div class="container row">
-                                    <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/bed/bed1.jpg" alt=""></div>
-                                    <section class="furniture_right col-sm-7">
-                                        <div class="furniture_name" id="furniture_name_1">Bed 1</div>
-                                        <div class="furniture_dimension">
-                                            <div class="length" id="length1">120</div>x<div class="width" id="width1">80</div>x<div class="height" id="height1">90</div>
-                                        </div>
-                                        <p class="furniture_description" id="furniture_description_1">Très confortable</p>
-                                    </section>
-                                </div>
-                            </label>
+                            </li>
                         </div>
+                        <div class="col-md-4 ground">
+                            <li><input name="ground2" type="checkbox" id="ground_cb_2" />
+                                <label class="square_view" for="ground_cb_2"><img class="ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
+                                    <div class="ground_desription" id="ground_description_2">Carrelage 2</div>
+                                </label>
 
-                        <div id="bed2" class="select_furniture bed col-md-5 ">
-                            <input type="checkbox" name="Bed2" id="bed2_input" class="checkbox">
-                            <label for="bed2_input">
-                                <div class="container row">
-                                    <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/bed/bed2.jpg" alt=""></div>
-                                    <section class="furniture_right col-sm-7">
-                                        <div class="furniture_name" id="furniture_name_2">Bed 2</div>
-                                        <div class="furniture_dimension">
-                                            <div class="length" id="length2">120</div>x<div class="width" id="width2">80</div>x<div class="height" id="height2">90</div>
-                                        </div>
-                                        <p class="furniture_description" id="furniture_description_2">Plutôt pas mal</p>
-                                    </section>
-                                </div>
-                            </label>
+                            </li>
                         </div>
+                        <div class="col-md-4 ground">
+                            <li><input name="ground3" type="checkbox" id="ground_cb_3" />
+                                <label class="square_view" for="ground_cb_3"><img class="ground_img" src="../image/furnitures/ground/parquet.jpg" />
+                                    <div class="ground_desription" id="ground_description_3">Parquet 1</div>
+                                </label>
 
-                        <div id="bed3" class="select_furniture bed col-md-5 ">
-                            <input type="checkbox" name="Bed3" id="bed3_input" class="checkbox">
-                            <label for="bed3_input">
-                                <div class="container row">
-                                    <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/bed/bed3.jpg" alt=""></div>
-                                    <section class="furniture_right col-sm-7">
-                                        <div class="furniture_name" id="furniture_name_3">Bed 3</div>
-                                        <div class="furniture_dimension">
-                                            <div class="length" id="length3">120</div>x<div class="width" id="width3">80</div>x<div class="height" id="height3">90</div>
-                                        </div>
-                                        <p class="furniture_description" id="furniture_description_3">Nickel</p>
-                                    </section>
-                                </div>
-                            </label>
-                        </div>
-
-                        <div id="table1" class="select_furniture table col-md-5 ">
-                            <input type="checkbox" name="Table1" id="table1_input" class="checkbox">
-                            <label for="table1_input">
-                                <div class="container row">
-                                    <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/table/table1.jpg" alt=""></div>
-                                    <section class="furniture_right col-sm-7">
-                                        <div class="furniture_name" id="furniture_name_4">table 1</div>
-                                        <div class="furniture_dimension">
-                                            <div class="length" id="length4">120</div>x<div class="width" id="width4">80</div>x<div class="height" id="height4">90</div>
-                                        </div>
-                                        <p class="furniture_description" id="furniture_description_4">Vive la longueur</p>
-                                    </section>
-                                </div>
-                            </label>
-                        </div>
-
-                        <div id="table2" class="select_furniture table col-md-5 ">
-                            <input type="checkbox" name="Table3" id="table2_input" class="checkbox">
-                            <label for="table2_input">
-                                <div class="container row">
-                                    <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/table/table2.jpg" alt=""></div>
-                                    <section class="furniture_right col-sm-7">
-                                        <div class="furniture_name" id="furniture_name_5">table 2</div>
-                                        <div class="furniture_dimension">
-                                            <div class="length" id="length5">120</div>x<div class="width" id="width5">80</div>x<div class="height" id="height5">90</div>
-                                        </div>
-                                        <p class="furniture_description" id="furniture_description_5">Très bien pour travailler</p>
-                                    </section>
-                                </div>
-                            </label>
-                        </div>
-
-                        <div id="table3" class="select_furniture table col-md-5 ">
-                            <input type="checkbox" name="Table3" id="table3_input" class="checkbox">
-                            <label for="table3_input">
-                                <div class="container row">
-                                    <div class=" col-sm-5"><img class="img_furniture" src="../image/furnitures/table/table3.jpg" alt=""></div>
-                                    <section class="furniture_right col-sm-7">
-                                        <div class="furniture_name" id="furniture_name_6">table 3</div>
-                                        <div class="furniture_dimension">
-                                            <div class="length" id="length6">120</div>x<div class="width" id="width6">80</div>x<div class="height" id="height6">90</div>
-                                        </div>
-                                        <p class="furniture_description" id="furniture_description_6">Originale</p>
-                                    </section>
-                                </div>
-                            </label>
+                            </li>
                         </div>
                     </div>
-                </div>
-            </section>
-        </section>
-
-        <hr class="idk">
-        <p class="on_hr"><span class="subtitle" id="title4">Ground</span></p>
-
-        <div class="container">
-            <ul>
-                <div class="row">
-                    <div class="col-md-4 ground">
-                        <li><input name="ground1" type="checkbox" id="ground_cb_1" />
-                            <label class="square_view" for="ground_cb_1"><img class="ground_img" src="../image/furnitures/ground/Carrelage1.jpg" />
-                                <div class="ground_desription" id="ground_description_1">Carrelage 1</div>
-                            </label>
-
-                        </li>
-                    </div>
-                    <div class="col-md-4 ground">
-                        <li><input name="ground2" type="checkbox" id="ground_cb_2" />
-                            <label class="square_view" for="ground_cb_2"><img class="ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
-                                <div class="ground_desription" id="ground_description_2">Carrelage 2</div>
-                            </label>
-
-                        </li>
-                    </div>
-                    <div class="col-md-4 ground">
-                        <li><input name="ground3" type="checkbox" id="ground_cb_3" />
-                            <label class="square_view" for="ground_cb_3"><img class="ground_img" src="../image/furnitures/ground/parquet.jpg" />
-                                <div class="ground_desription" id="ground_description_3">Parquet 1</div>
-                            </label>
-
-                        </li>
-                    </div>
-                </div>
-            </ul>
-        </div>
-        <br>
-        <br>
-        <div class="row">
-            <div class="col-md-5"></div>
-
-            <div class="col-md-2 ">
-                <a class="button" id="Valider" href="#popup1"  type="submit" style="vertical-align:middle" value="Valider"><span>Valider </span></a>
+                </ul>
             </div>
-        </div>
-        <br>
+            <br>
+            <br>
+            <div class="row">
+                <div class="col-md-5"></div>
 
-
-        <div id="popup1" class="overlay2">
-            <section class="resume">
-
-                <div id="resume_title">Le devis</div>
-                <div id="resume_dimensions">Dimensions de la pièce : <p id="resume_length" class='resume_lwh'></p>x<p id="resume_width" class='resume_lwh'></p>x<p id="resume_height" class='resume_lwh'></p>
+                <div class="col-md-2 ">
+                    <a class="button" id="Valider" href="#popup1" type="submit" style="vertical-align:middle" value="Valider"><span>Valider </span></a>
                 </div>
-                <div id="resume_divColor">Vous avez choisis<p id="resume_nbColor"></p>couleur(s) pour les murs</div>
+            </div>
+            <br>
 
-                <div class="resume_color" id="resume_color1"></div>
-                <div class="resume_color" id="resume_color2"></div>
-                <div class="resume_color" id="resume_color3"></div>
-                <div class="resume_color" id="resume_color4"></div>
-                <div class="resume_color" id="resume_color5"></div>
 
-                <div>Meuble(s) choisi(s) : </div>
-                <section class="lesMeubles">
-                    <section class="resume_meuble" id="resume_meuble1">
-                        <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image1">
-                        <div class="resume_name" id="resume_name1">name</div>
-                    </section>
-                    <section class="resume_meuble" id="resume_meuble2">
-                        <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image2">
-                        <div class="resume_name" id="resume_name2">name</div>
-                    </section>
-                    <section class="resume_meuble" id="resume_meuble3">
-                        <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image3">
-                        <div class="resume_name" id="resume_name3">name</div>
-                    </section>
+            <div id="popup1" class="overlay2">
+                <section class="resume">
 
-                    <!-- </section>
+                    <div id="resume_title">Le devis</div>
+                    <div id="resume_dimensions">Dimensions de la pièce : <p id="resume_length" class='resume_lwh'></p>x<p id="resume_width" class='resume_lwh'></p>x<p id="resume_height" class='resume_lwh'></p>
+                    </div>
+                    <div id="resume_divColor">Vous avez choisis<p id="resume_nbColor"></p>couleur(s) pour les murs</div>
+
+                    <div class="resume_color" id="resume_color1"></div>
+                    <div class="resume_color" id="resume_color2"></div>
+                    <div class="resume_color" id="resume_color3"></div>
+                    <div class="resume_color" id="resume_color4"></div>
+                    <div class="resume_color" id="resume_color5"></div>
+
+                    <div>Meuble(s) choisi(s) : </div>
+                    <section class="lesMeubles">
+                        <section class="resume_meuble" id="resume_meuble1">
+                            <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image1">
+                            <div class="resume_name" id="resume_name1">name</div>
+                        </section>
+                        <section class="resume_meuble" id="resume_meuble2">
+                            <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image2">
+                            <div class="resume_name" id="resume_name2">name</div>
+                        </section>
+                        <section class="resume_meuble" id="resume_meuble3">
+                            <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image3">
+                            <div class="resume_name" id="resume_name3">name</div>
+                        </section>
+
+                        <!-- </section>
                 <section class="lesMeubles">-->
-                    <section class="resume_meuble" id="resume_meuble4">
-                        <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image4">
-                        <div class="resume_name" id="resume_name4">name</div>
+                        <section class="resume_meuble" id="resume_meuble4">
+                            <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image4">
+                            <div class="resume_name" id="resume_name4">name</div>
+                        </section>
+                        <section class="resume_meuble" id="resume_meuble5">
+                            <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image5">
+                            <div class="resume_name" id="resume_name5">name</div>
+                        </section>
+                        <section class="resume_meuble" id="resume_meuble6">
+                            <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image6">
+                            <div class="resume_name" id="resume_name6">name</div>
+                        </section>
                     </section>
-                    <section class="resume_meuble" id="resume_meuble5">
-                        <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image5">
-                        <div class="resume_name" id="resume_name5">name</div>
+                    <div id='resume_solChoice'>Sol(s) choisi(s) : </div>
+                    <section class="lesSols">
+
+                        <section class="resume_sol ground " id="resume_sol1">
+                            <div class="square_view" for="ground_cb_2">
+                                <img id="resume_solImage1" class="resume_solImage ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
+                                <div id="resume_solDiv1" class="ground_desription" id="ground_description_2">Carrelage 2</div>
+                            </div>
+
+                        </section>
+                        <section class="resume_sol ground " id="resume_sol2">
+                            <div class="square_view" for="ground_cb_2">
+                                <img id="resume_solImage2" class="resume_solImage ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
+                                <div id="resume_solDiv2" class="ground_desription" id="ground_description_2">Carrelage 2</div>
+                            </div>
+
+                        </section>
+                        <section class="resume_sol ground " id="resume_sol3">
+                            <div class="square_view" for="ground_cb_2">
+                                <img id="resume_solImage3" class="resume_solImage ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
+                                <div id="resume_solDiv3" class="ground_desription" id="ground_description_2">Carrelage 2</div>
+                            </div>
+
+                        </section>
+
                     </section>
-                    <section class="resume_meuble" id="resume_meuble6">
-                        <img class="resume_image" src="../image/furnitures/bed/bed1.jpg" id="resume_image6">
-                        <div class="resume_name" id="resume_name6">name</div>
-                    </section>
+
+                    <div id="resume_price">Estimation du prix de la prestation :<p id="resume_price_value">111</p>€</div>
+                    <div class="buttonEnd">
+                        <a>
+                            <input class="text" type="submit" value="Envoyer par mail">
+                            <span class="line -right"></span>
+                            <span class="line -top"></span>
+                            <span class="line -left"></span>
+                            <span class="line -bottom"></span>
+
+                            <a id="annuler" href="#">Annuler</a>
+                        </a>
+                    </div>
                 </section>
-                <div id='resume_solChoice'>Sol(s) choisi(s) : </div>
-                <section class="lesSols">
-                    
-                    <section class="resume_sol ground " id="resume_sol1">
-                        <div class="square_view" for="ground_cb_2">
-                            <img id="resume_solImage1" class="resume_solImage ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
-                            <div id="resume_solDiv1" class="ground_desription" id="ground_description_2">Carrelage 2</div>
-                        </div>
-
-                    </section>
-                    <section class="resume_sol ground " id="resume_sol2">
-                        <div class="square_view" for="ground_cb_2">
-                            <img id="resume_solImage2" class="resume_solImage ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
-                            <div id="resume_solDiv2" class="ground_desription" id="ground_description_2">Carrelage 2</div>
-                        </div>
-
-                    </section>
-                    <section class="resume_sol ground " id="resume_sol3">
-                        <div class="square_view" for="ground_cb_2">
-                            <img id="resume_solImage3" class="resume_solImage ground_img" src="../image/furnitures/ground/Carrelage2.jpg" />
-                            <div id="resume_solDiv3" class="ground_desription" id="ground_description_2">Carrelage 2</div>
-                        </div>
-
-                    </section>
-
-                </section>
-
-                <div id="resume_price">Estimation du prix de la prestation :<p id="resume_price_value">111</p>€</div>
-                <div class="buttonEnd">
-                    <a>
-                        <input class="text" type="submit" value="Envoyer par mail">
-                        <span class="line -right"></span>
-                        <span class="line -top"></span>
-                        <span class="line -left"></span>
-                        <span class="line -bottom"></span>
-
-                        <a id="annuler" href="#">Annuler</a>
-                    </a>
-                </div>
-            </section>
-        </div>
+            </div>
         </form>
         <br>
         <br>
@@ -359,8 +359,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-xs-12 about-company">
-                        <h2 class="footerTitle2">Home Design</h2>
-                        <p class="pr-5 text-white-50">Home Design est un site d'architecture intérieure pour vous aider à trouver, ou retrouver, le rayon de soleil qui manque à votre chez vous. </p>
+                        <h2 class="footerTitle2">Arch'ISEN</h2>
+                        <p class="pr-5 text-white-50">Arch'ISEN est un site d'architecture intérieure pour vous aider à trouver, ou retrouver, le rayon de soleil qui manque à votre chez vous. </p>
                         <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i class="fa fa-linkedin-square"></i></a></p>
                     </div>
                     <div class="col-lg-3 col-xs-12 links">
